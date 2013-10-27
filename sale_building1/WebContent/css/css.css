@@ -1,0 +1,13 @@
+body {
+	font-size: 12px;
+	background-color: #080E3E;
+	margin: auto;
+	padding: 0px;
+	text-align: center;
+}
+#peng {
+	text-align: center;
+	margin: auto;
+	width: 1024px;
+	clear: both;
+}
