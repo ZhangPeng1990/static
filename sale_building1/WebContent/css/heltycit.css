@@ -1,0 +1,145 @@
+@CHARSET "UTF-8";
+/* CSS Document */
+@import url("base.css");
+
+.left{ float:left; }
+.left .leftT{ width:278px; height:38px; background:url(tab.jpg) no-repeat; overflow:hidden; }
+.left ul{ width:258px; border:solid 1px #ddd; border-top:none; background:#f4f4f4; padding:14px 8px 12px 10px; *padding:9px 8px 0px 10px; _padding:14px 8px 12px 10px; }
+.leftT .tab{ float:left; overflow:hidden; }
+.tab span{ float:left; width:91px; height:37px; line-height:37px; text-align:center;  margin:1px 0 0 1px; font-weight:bold; color:#007a99; }
+.tab span.select{ background:url(tab_hover.jpg) no-repeat; color:white; }
+.leftT a{ float:left; margin-left:20px;}
+.leftB li{ background:url(left01.jpg) no-repeat left center; padding-left:10px; overflow:hidden; line-height:24px; }
+.leftB li a{ float:left;}
+.leftB li span{ float:right; }
+
+.middle{ float:left; border:solid 1px #cfd8e1; padding:1px; width:344px; height:205px; _display:inline; margin-left:10px; }
+.right{ float:right; width:332px; padding-top:1px; height:206px; overflow:hidden;border: 1px solid #D8D8D8; }
+
+.right dl dt{ width:317px;height:35px; line-height:35px; background:url(right02.jpg) no-repeat; margin-top:-1px; overflow:hidden; font-weight:bold; color:#007a99; padding-left:15px; }
+.right dl dt.selct02{ background:url(right001.gif) no-repeat; color:white; }
+.right dl dd{ padding:0px;}
+.right dl dd a{ color:white;}
+.right dl dd a:hover{ color:#D1E8ED;}
+.div1 a{ float:left; width:70px; height:35px; text-align:center;line-height:35px; padding-left:2px; font-weight:bold; margin-left:13px; background:url(new_butn_bg.jpg) no-repeat; }
+.right p a{ float:left; width:70px; height:35px; text-align:center;line-height:35px; padding-left:2px; font-weight:bold; margin-left:13px; background:url(new_butn_bg.jpg) no-repeat; }
+.right p{ padding:10px 0 0 0;}
+.right p span{ float:right; line-height: 35px;clear:right; display:block;}
+
+div#MainPromotionBanner{
+	width:343px;
+	height:205px;
+	background:#feb900;
+}
+#MainPromotionBanner #SlidePlayer {
+	position:relative;
+	margin: 0 auto;
+}
+#MainPromotionBanner .Slides{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	height: 205px;
+	overflow: hidden;
+}
+#MainPromotionBanner .Slides li {
+	float: left;
+	width: 343px;
+	height: 205px;
+}
+
+#MainPromotionBanner .Slides img{
+	border:0;
+	display: block;
+	width: 343px;
+	height: 205px;	
+}
+
+#MainPromotionBanner .SlideTriggers{
+	margin: 0;
+	padding: 0;
+	list-style: none; 
+	position: absolute; 
+	top: 180px; 
+	left: 0px;
+	z-index: 10;
+	height: 25px;	
+}
+#MainPromotionBanner .SlideTriggers li{
+	float: left;
+	display: inline;
+	color: #74a8ed;
+	text-align: center;
+	line-height:16px;
+	width: 16px;
+	height: 16px;
+	font-family: Arial;
+	font-size: .9em;
+	cursor: pointer;
+	overflow: hidden; 
+	margin:3px 6px;
+	background: url(slide_trigger.gif) no-repeat center center;
+}
+#MainPromotionBanner .SlideTriggers li.Current{ 
+	color:#fff; 
+	background: url(slide_trigger_c.gif) no-repeat center center;
+	border:0; 
+	font-weight:bold;
+	font-size: 1.4em;
+	line-height: 21px;
+	height: 21px;
+	width: 21px;
+	margin:0 6px; 
+}
+
+.ttl{  height:38px; line-height:37px; padding-left:10px; background:url(service01.jpg) repeat-x; }
+.ttl h2{ font-weight:normal; }
+.style{ overflow:hidden; }
+.style li{ width:67px; height:25px; line-height:28px; text-align:center; padding-left:15px; float:left; margin:7px 15px 0 0; background:url(service02.gif) no-repeat; }
+.style li.first{ width:217px; height:40px; line-height:40px; text-align:center; padding:0; margin:1px 15px 1px 0; font-weight:bold; color:#007a99; background:url(service03.gif) no-repeat; }
+.border{_width:960px;  height:21px; background:url(service/border01.gif) repeat-x; }
+.ttl02{ width:994px; height:40px; line-height:40px; text-align:center; margin:1px auto 0; clear:both; font-size:14px; font-weight:bold; color:#007a99; background:url(service04.gif) no-repeat; }
+.style02{ width:974px; height:90px; padding:5px; overflow:hidden; background:url(service05.gif) no-repeat; }
+.content{ margin-top:10px; }
+.bt{ float:left; width:99px; height:91px; padding:; overflow:hidden; background:url(service06.gif) no-repeat; }
+.bt p{ width:25px; margin:25px auto 0; }
+.btt{ float:right; width:860px; height:91px; }
+
+
+.ttll{ height:auto; padding-bottom:5px; background-position:bottom; }
+.ttl03{ width:970px; height:55px; margin:0 auto; overflow:hidden; }
+.ttl03 ul{ width:1000px; overflow:hidden; }
+.ttl03 li{ float:left; _display:inline; margin-right:25px; text-align:center; line-height:32px; *line-height:35px; font-weight:bold; font-size:14px; width:223px; height:55px; background:url(ttl03.gif) no-repeat; }
+.ttl03 li a{ color:white; }
+.ttl03 li a:hover{ color:white; }
+
+
+.footer2{ width:1000px; margin:0 auto; padding-bottom:20px; }
+.footer{ width:1000px; margin:0 auto; padding-bottom:20px; }
+.footer img{ float:left; margin:20px 0 0 90px; }
+.footer2 img{ float:right; padding:35px 0px 0px 780px; position:absolute; z-index:-99; }
+.footer2 ul{ float:left; display:inline; margin:20px 0 0 45px; }
+.footer ul{ float:left; display:inline; margin:20px 0 0 45px; }
+.footer2 li a{ padding:0 5px; }
+.footer li a{ padding:0 5px; }
+.footer li.bq{ padding-left:5px; }
+
+.bottom{ width:1020px; height:15px; background:url(bottom.jpg) no-repeat; *background:url(bottom.jpg) no-repeat -1px 0; margin:0 auto; }
+.footer{ width:1000px; margin:0 auto; padding-bottom:20px; height:80px; overflow:hidden; }
+.footer img{ float:left; margin:45px 0 0 90px; }
+.footer ul{ float:left; _display:inline; margin:20px 0 0 45px; }
+.footer li a{ padding:0 5px; }
+.footer li.bq{ padding-left:5px; text-align:center; margin-bottom:15px; }
+
+*{ margin:0; padding:0; border:0; }
+a{ text-decoration:none; color:#000; font-size:12px;}
+
+
+#links{ background:url(links_bg1.jpg) repeat-x; height:59px;font-size:12px; overflow:hidden; zoom:1; width:1000px; margin:0 auto;}
+#links dt{ width:120px; float:left; text-align:center; line-height:55px; background:url(links_bg2.jpg) no-repeat right center;}
+#links dd{ width:850px; float:right; padding:10px 15px 0 0;}
+#links dt a{ color:#356e81; font-weight:bold;}
+#links dd a{ padding:0 10px; line-height:22px;}
+
+
+

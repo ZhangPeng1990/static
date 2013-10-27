@@ -1,0 +1,93 @@
+.bx ul li.top span{float:right;width:204px;font-size:12px;line-height:20px; height:60px; display:block; overflow:hidden; margin-bottom:4px;color:#777777;}
+.bx ul li.top span a{display:block;line-height:18px; height:18px;overflow:hidden;font-size:12px;font-weight:bold;color:#035C9D; text-decoration:none;}
+
+
+
+.fm {
+    border: 0px ; width: 1000px; height: 102px; margin-left: 10px;
+}
+.fm .left {
+    background: url("activeleft.gif") repeat scroll 0 0 transparent;
+    float: left;
+    height: 100px;
+    width: 40px;
+   
+}
+.fm .list {
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+}
+.fm .list .bx {
+    position: relative;
+    top: 0;
+}
+.fm .list .bx ul {
+    clear: both;
+    display: block;
+    float: none;
+    height: 100px;
+    overflow: hidden;
+    width: 1000px;
+}
+.fm .list .bx ul li {
+    display: inline;
+    float: left;
+    height: 100px;
+    margin-left: 10px;
+    padding-top: 15px;
+    width: 321px;
+    padding-bottom: 2px;
+}
+.fm .list .bx ul li.top span {
+    color: #777777;
+    float: right;
+    font-size: 12px;
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    width: 167px;
+}
+.fm .list .bx ul li.top span a {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+}
+.fm .list .bx ul li.top span a {
+    color: #014FAF;
+}
+.fm .list .bx ul li.top span a:hover {
+    background: none repeat scroll 0 0 #014FAF;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.fm .list .bx ul li.top i {
+    border: 1px solid #AAAAAA;
+    float: left;
+    padding: 2px;
+    margin-left: 6px;
+}
+.fm .list .bx ul li.top i img {
+    display: block;
+    height: 73px;
+    width: 135px;
+}
+.fm .list .bx ul li.top p {
+    color: #777777;
+    float: right;
+    font-size: 12px;
+    height: 55px;
+    line-height: 18px;
+    overflow: hidden;
+    width: 167px;
+}
+.fm .list .bx ul li.blk {
+    clear: both;
+    display: block;
+    float: none;
+    height: 1px;
+}
+
