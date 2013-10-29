@@ -1,0 +1,184 @@
+/* CSS Document */
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,form,img,dl,dt,dd,table,th,td,blockquote,fieldset,div,strong,label,em{margin:0;padding:0;border:0;}
+ul,ol,li{list-style:none;}
+input,button{margin:0;font-size:12px;vertical-align:middle;}
+body{font-size:12px;font-family:Arial, Helvetica, sans-serif;  text-align:center; margin:0 auto; background:#cfc2a9;}
+table{border-collapse:collapse;border-spacing:0;}
+a{color:#333;text-decoration:none;}
+a:hover{color:#ef9b11; text-decoration:underline;}
+
+.main{ width:980px; margin:10px auto 0 auto; position:relative;}
+.booklet {MARGIN: 0px auto 10px auto; OVERFLOW: visible! important; WIDTH: 800px; POSITION: relative; HEIGHT: 500px}
+.b-page {LEFT: 0px;  OVERFLOW: hidden; height:527px;POSITION: absolute; TOP: 0px}
+.booklet .b-wrap {POSITION: absolute; TOP: 0px}
+.booklet .b-wrap-left {BACKGROUND: url(../images/images/book_l.jpg) #fff no-repeat}
+.booklet .b-wrap-right {BACKGROUND: url(../images/images/book_r.jpg) #efefef no-repeat}
+.booklet .b-pN .b-wrap {LEFT: 0px}
+.booklet .b-p1 .b-wrap {LEFT: 0px}
+.booklet .b-p2 .b-wrap {LEFT: 0px}
+.booklet .b-p3 .b-wrap {LEFT: 0px}
+.booklet .b-p4 .b-wrap {LEFT: 0px}
+.booklet .b-p0 .b-wrap {RIGHT: 0px}
+.booklet .b-page-blank {PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; WIDTH: 100%; PADDING-TOP: 0px; HEIGHT: 100%}
+.booklet .b-page-cover {PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: #925c0e; PADDING-BOTTOM: 0px; WIDTH: 100%; PADDING-TOP: 0px; HEIGHT: 100%}
+.booklet .b-page-cover H3 {COLOR: #fff; text-shadow: 0px 1px 3px #222}
+.booklet .b-counter {PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; WIDTH: 25px; COLOR: #444; BOTTOM: 10px; PADDING-TOP: 5px; POSITION: absolute; HEIGHT: 20px; TEXT-ALIGN: center}
+.booklet .b-wrap-left .b-counter {LEFT: 228px}
+.booklet .b-wrap-right .b-counter {RIGHT: 228px}
+.booklet .b-p0 {BACKGROUND: #cfc2a9}
+.booklet .b-p3 {BACKGROUND: #cfc2a9}
+.booklet .b-overlay {WIDTH: 50%; POSITION: absolute; TOP: 0px; HEIGHT: 100%}
+.booklet .b-overlay-prev {LEFT: 0px}
+.booklet .b-overlay-next {
+	RIGHT: 0px
+}
+.booklet .b-tab {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 11px; BACKGROUND: #000; PADDING-BOTTOM: 0px; WIDTH: 100%; COLOR: #ccc; PADDING-TOP: 10px; POSITION: absolute; HEIGHT: 40px; TEXT-ALIGN: center
+}
+.booklet .b-tab-prev {
+	LEFT: 0px
+}
+.booklet .b-tab-next {
+	RIGHT: 0px
+}
+.booklet .b-tab:hover {
+	BACKGROUND: #aaa; COLOR: #000
+}
+.booklet .b-arrow {
+	DISPLAY: block; WIDTH: 74px; TEXT-INDENT: -9999px; POSITION: absolute; TOP: 0px; HEIGHT: 100%
+}
+.booklet .b-arrow DIV {
+	DISPLAY: none; LEFT: 0px; WIDTH: 74px; TEXT-INDENT: -9999px; POSITION: absolute; TOP: 25%; HEIGHT: 170px
+}
+.booklet .b-arrow-next {
+	RIGHT: -80px
+}
+.booklet .b-arrow-prev {
+	LEFT: -80px
+}
+.b-menu {
+	Z-INDEX: 100
+}
+.b-selector {
+	Z-INDEX: 100
+}
+.booklet {
+	Z-INDEX: 10
+}
+.b-pN {
+	Z-INDEX: 10
+}
+.b-p0 {
+	Z-INDEX: 10
+}
+.b-p1 {
+	Z-INDEX: 10
+}
+.b-p2 {
+	Z-INDEX: 10
+}
+.b-p3 {
+	Z-INDEX: 10
+}
+.b-p4 {
+	Z-INDEX: 10
+}
+.b-prev {
+	Z-INDEX: 40
+}
+.b-next {
+	Z-INDEX: 40
+}
+.b-counter {
+	Z-INDEX: 40
+}
+.b-menu {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 10px; PADDING-TOP: 0px; HEIGHT: 40px
+}
+.b-selector {
+	FLOAT: right; CURSOR: pointer; COLOR: #cecece; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; POSITION: relative; HEIGHT: 40px; BORDER-BOTTOM-STYLE: none
+}
+.b-selector .b-current {
+	PADDING-RIGHT: 15px; DISPLAY: block; PADDING-LEFT: 15px; BACKGROUND: #000; PADDING-BOTTOM: 12px; LINE-HEIGHT: 20px; PADDING-TOP: 8px; HEIGHT: 20px; TEXT-ALIGN: center; min-width: 18px
+}
+.b-selector-page {
+	MARGIN-LEFT: 15px; WIDTH: auto
+}
+.b-selector-chapter {
+	WIDTH: auto
+}
+.b-selector:hover {
+	BACKGROUND-POSITION: left 0px; COLOR: #fff
+}
+.b-selector:hover .b-current {
+	BACKGROUND-POSITION: right 0px
+}
+.b-selector UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; RIGHT: 0px; BACKGROUND: #000; PADDING-BOTTOM: 10px; MARGIN: 0px; FONT: 12px "Myriad Pro", Myriad, "DejaVu Sans Condensed","Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; OVERFLOW: hidden; WIDTH: 240px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none! important; POSITION: absolute; TOP: 40px
+}
+.b-selector LI {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+.b-selector A {
+	PADDING-RIGHT: 10px; DISPLAY: block; PADDING-LEFT: 10px; PADDING-BOTTOM: 5px; COLOR: #cecece; PADDING-TOP: 5px; HEIGHT: 14px; TEXT-DECORATION: none
+}
+.b-selector A .b-text {
+	CLEAR: none; FLOAT: left
+}
+.b-selector A .b-num {
+	CLEAR: none; FLOAT: right
+}
+.b-selector A:hover {
+	COLOR: #fff
+}
+.b-load DIV {FONT-SIZE: 12px;LINE-HEIGHT: 24px;TEXT-ALIGN: justify}
+#book {
+	MARGIN-BOTTOM: 0px; POSITION: relative
+}
+#book P {
+	MARGIN: 0px; TEXT-INDENT: 24px
+}
+#book .join {
+	TEXT-INDENT: 0px
+}
+#book H1 {
+	COLOR: #bf5934; FONT-FAMILY: "Microsoft Yahei","SimHei"
+}
+#book H2 {
+	FONT-SIZE: 16px; MARGIN: 8px 0px; COLOR: #bf5934; FONT-FAMILY: "Microsoft Yahei","SimHei"; TEXT-ALIGN: center
+}
+#book H3 {
+	FONT-SIZE: 14px; MARGIN: 4px 0px; COLOR: #bf5934
+}
+#book .sign {
+	TEXT-ALIGN: right
+}
+.main .arrow {
+	DISPLAY: none; WIDTH: 42px; POSITION: absolute; TOP: 0px; HEIGHT: 547px
+}
+.main .mask {
+	BACKGROUND: #000; FILTER: Alpha(opacity=10); WIDTH: 100%; CURSOR: pointer; HEIGHT: 100%; opacity: 0.1
+}
+.main .arrow .al {
+	Z-INDEX: 4; LEFT: 50%; MARGIN: -11px 0px 0px -9px; WIDTH: 18px; CURSOR: pointer; POSITION: absolute; TOP: 50%; HEIGHT: 22px
+}
+.main .arrow .ar {
+	Z-INDEX: 4; LEFT: 50%; MARGIN: -11px 0px 0px -9px; WIDTH: 18px; CURSOR: pointer; POSITION: absolute; TOP: 50%; HEIGHT: 22px
+}
+.al {BACKGROUND: url(../images/arrow_w_l.png) no-repeat}
+.ar {BACKGROUND: url(../images/arrow_w_r.png) no-repeat}
+.al {_BACKGROUND: none transparent scroll repeat 0% 0%; FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader (enabled=true, sizingMethod=scale, src='images/arrow_w_l.png')
+}
+.ar {_BACKGROUND: none transparent scroll repeat 0% 0%; FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader (enabled=true, sizingMethod=scale, src='images/arrow_w_r.png')
+}
+.foot {
+	BACKGROUND: url(../images/images/book_f.jpg) no-repeat; OVERFLOW: hidden; WIDTH: 980px; HEIGHT: 12px
+}
+#catalog_num {
+	WIDTH: 18px
+}
+.prompt {MARGIN:10px auto 0 auto; WIDTH: 950px}
+.prompt SPAN {FONT-SIZE: 12px; MARGIN: 0px 155px; LETTER-SPACING: 1px}
+.prompt LABEL {FONT-SIZE: 12px; MARGIN-LEFT: 28px}
+.prompt strong {FONT-WEIGHT: bold; FONT-SIZE: 14px; padding-right:20px;}
+.page_nav {BORDER-BOTTOM: #dad3d1 1px solid}

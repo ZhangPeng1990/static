@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>拖动条改变图片大小</title>
+
+<style>
+	*{margin:0;padding:0;font-size:12px;}
+	.btn{width:50px;height:15px;cursor:pointer;}
+	#picViewPanel{margin:5 50 0 50px; width:278px; height:200px;overflow:auto;text-align:center;border:solid 1px #cccccc;}
+	#slider{margin:0 50px;height:15px;width:278px;border:1px solid #000000;position:relative;}
+	#sliderLeft{height:13px; width:13px;float:left;border:1px solid #cccccc;cursor:pointer;}
+	#sliderBlock{height:13px;width:50px;border:1px solid #cccccc;position:absolute;top:0;left:113px;cursor:pointer;background:#cccccc;text-align:center;}
+	#sliderRight{height:13px;width:13px;float:right;border:1px solid #cccccc;cursor:pointer;}
+</style>
+
+<script>
+var pv = null;
+var sd = null;
+window.onload=function(){
+  pv = new PicView("../images/logo.gif"); 
+  sd = new Slider(
+ 	function(p){
+  	  document.getElementById("sliderBlock").innerHTML = 2*p +"%";
+          pv.expand(2*p/100);
+        },function(){});
+}
+var PicView = function(url,alt){
+  this.url=url;
+  this.obj=null;
+  this.alt=alt?alt:"";
+  this.realWidth=null;
+  this.realHeight=null;
+  this.zoom=1;
+  
+  this.init();
+} 
+PicView.prototype.init=function(){
+  var _img=document.createElement("img");
+  _img.src = this.url; 
+  _img.alt = this.alt;
+  _img.style.zoom = this.zoom;  
+  document.getElementById("picViewPanel").appendChild(_img);
+  this.obj=_img;
+  this.realWidth=_img.offsetWidth;  
+  this.realHeight=_img.offsetHeight;
+  
+}
+PicView.prototype.reBind=function(){  
+  this.obj.style.width =  this.realWidth*this.zoom+"px";
+  this.obj.style.height = this.realHeight*this.zoom+"px";
+}
+PicView.prototype.expand=function(n){   
+  this.zoom=n;
+  this.reBind();	
+}
+var Slider = function(ing,ed){
+  this.block=document.getElementById("sliderBlock");	
+  this.percent = 0;
+  this.value = 0;
+  this.ing = ing;
+  this.ed = ed;
+  this.init();
+}
+Slider.prototype.init=function(){
+  var _sx=0;
+  var _cx=0;
+  var o=this.block;
+  var me=this;
+  o.onmousedown=function(e){
+	var e=window.event||e;
+        _sx = o.offsetLeft;
+        _cx = e.clientX-_sx;
+        document.body.onmousemove=move;
+        document.body.onmouseup=up;	
+  };
+  function move(e){
+	var e=window.event||e;
+        var pos_x = e.clientX - _cx;
+   	pos_x=pos_x<13?13:pos_x;
+	pos_x=pos_x>248+15-50?248+15-50:pos_x;
+        o.style.left =  pos_x+"px";
+  	me.percent=(pos_x-13)/2;
+        me.ing(me.percent);        
+  }
+  function up(){
+	document.body.onmousemove=function(){};
+        document.body.onmouseup=function(){};	
+  }
+}
+</script>
+
+</head>
+<body>
+	<div id="picViewPanel"></div>
+	<div id="slider">
+	<span id="sliderLeft" ><<</span>
+	<span id="sliderRight">>></span>
+	<span id="sliderBlock">==</span>
+	</div>
+</body>
+</html>

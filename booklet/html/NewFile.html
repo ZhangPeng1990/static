@@ -1,0 +1,142 @@
+<html>
+<head>
+<meta name="keywords" content="站长,网页特效,js特效,广告代码,zzjs,zzjs.net,sky,www.zzjs.net,站长特效 网" />
+<meta name="description" content="www.zzjs.net,站长特效网，站长必备js特效及广告代码。大量高质量js特效，提供高质量广告代码下载,尽在站长特效网" />
+<title>改变层大小的js脚本，sky整理收集。</title>
+<meta content="text/html; charset=gb2312" http-equiv="Content-Type">
+<style> {
+	box-sizing: border-box; moz-box-sizing: border-box
+}
+#testDiv     { background-color: buttonface; background-repeat: repeat;
+               background-attachment: scroll; color: #3969A5; height: 300px;
+               left: 30px; overflow: hidden; width: 500; z-index: 2;
+               border: 2px outset white; margin: 0px; padding: 2px;
+               background-position: 0% 50% }
+body         { font-family: Verdana; font-size: 9pt }
+#innerNice   { background-color: white; background-repeat: repeat; background-attachment:
+               scroll; color: #3969A5; height: 100%; overflow: auto; width:
+               100%; border: 2px inset white; padding: 8px;
+               background-position: 0% 50% }
+</style>
+<SCRIPT language=javascript>
+/////////////////////////////////////////////////////////////////////////
+// Generic Resize by Erik Arvidsson                                    //
+//                                                                     //
+// You may use this script as long as this disclaimer is remained.     //
+// See www.dtek.chalmers.se/~d96erik/dhtml/ for mor info               //
+//                                                                     //
+// How to use this script!                                             //
+// Link the script in the HEAD and create a container (DIV, preferable //
+// absolute positioned) and add the class="resizeMe" to it.            //
+/////////////////////////////////////////////////////////////////////////
+var theobject = null; //This gets a value as soon as a resize start
+function resizeObject() {
+	this.el        = null; //pointer to the object
+	this.dir    = "";      //type of current resize (n, s, e, w, ne, nw, se, sw)
+	this.grabx = null;     //Some useful values
+	this.graby = null;
+	this.width = null;
+	this.height = null;
+	this.left = null;
+	this.top = null;
+}
+//Find out what kind of resize! Return a string inlcluding the directions
+function getDirection(el) {
+	var xPos, yPos, offset, dir;
+	dir = "";
+	xPos = window.event.offsetX;
+	yPos = window.event.offsetY;
+	offset = 8; //The distance from the edge in pixels
+	if (yPos<offset) dir += "n";
+	else if (yPos > el.offsetHeight-offset) dir += "s";
+	if (xPos<offset) dir += "w";
+	else if (xPos > el.offsetWidth-offset) dir += "e";
+	return dir;
+}
+function doDown() {
+	var el = getReal(event.srcElement, "className", "resizeMe");
+	if (el == null) {
+		theobject = null;
+		return;
+	}
+	dir = getDirection(el);
+	if (dir == "") return;
+	theobject = new resizeObject();
+	theobject.el = el;
+	theobject.dir = dir;
+	theobject.grabx = window.event.clientX;
+	theobject.graby = window.event.clientY;
+	theobject.width = el.offsetWidth;
+	theobject.height = el.offsetHeight;
+	theobject.left = el.offsetLeft;
+	theobject.top = el.offsetTop;
+	window.event.returnValue = false;
+	window.event.cancelBubble = true;
+}
+function doUp() {
+	if (theobject != null) {
+		theobject = null;
+	}
+}
+function doMove() {
+	var el, xPos, yPos, str, xMin, yMin;
+	xMin = 8; //The smallest width possible
+	yMin = 8; //             height
+	el = getReal(event.srcElement, "className", "resizeMe");
+	if (el.className == "resizeMe") {
+		str = getDirection(el);
+	//Fix the cursor
+		if (str == "") str = "default";
+		else str += "-resize";
+		el.style.cursor = str;
+	}
+//欢迎来到站长特效网，我们的网址是www.zzjs.net，很好记，zz站长，js就是js特效，本站收集大量高质量js代码，还有许多广告代码下载。
+//Dragging starts here
+	if(theobject != null) {
+		if (dir.indexOf("e") != -1)
+			theobject.el.style.width = Math.max(xMin, theobject.width + window.event.clientX - theobject.grabx) + "px";
+		if (dir.indexOf("s") != -1)
+			theobject.el.style.height = Math.max(yMin, theobject.height + window.event.clientY - theobject.graby) + "px";
+		if (dir.indexOf("w") != -1) {
+			theobject.el.style.left = Math.min(theobject.left + window.event.clientX - theobject.grabx, theobject.left + theobject.width - xMin) + "px";
+			theobject.el.style.width = Math.max(xMin, theobject.width - window.event.clientX + theobject.grabx) + "px";
+		}
+		if (dir.indexOf("n") != -1) {
+			theobject.el.style.top = Math.min(theobject.top + window.event.clientY - theobject.graby, theobject.top + theobject.height - yMin) + "px";
+			theobject.el.style.height = Math.max(yMin, theobject.height - window.event.clientY + theobject.graby) + "px";
+		}
+		window.event.returnValue = false;
+		window.event.cancelBubble = true;
+	}
+}
+function getReal(el, type, value) {
+	temp = el;
+	while ((temp != null) && (temp.tagName != "BODY")) {
+		if (eval("temp." + type) == value) {
+			el = temp;
+			return el;
+		}
+		temp = temp.parentElement;
+	}
+	return el;
+}
+//欢迎来到站长特效网，我们的网址是www.zzjs.net，很好记，zz站长，js就是js特效，本站收集大量高质量js代码，还有许多广告代码下载。
+document.onmousedown = doDown;
+document.onmouseup   = doUp;
+document.onmousemove = doMove;
+</SCRIPT>
+<meta content="Microsoft FrontPage 4.0" name="GENERATOR">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+</head>
+<body>
+<a href="<#ZC_BLOG_HOST#>">站长特效网</a>,站长必备的高质量网页特效和广告代码。zzjs.net，站长js特效。<hr>
+<!--欢迎来到站长特效网，我们网站收集大量高质量js特效，提供许多广告代码下载，网址：www.zzjs.net，zzjs@msn.com,用.net打造靓站-->
+<div class="resizeMe" id="testDiv">
+  <div id="innerNice">
+    <p align="center">　
+    <p align="center">
+sky提示您：请在边框处拖动鼠标
+  </div>
+</div>
+</body>
+</html>
