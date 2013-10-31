@@ -1,0 +1,383 @@
+@CHARSET "UTF-8";
+.upload_type_list {
+    width: 895px;
+    margin-left: 15px;
+    height: 35px;
+    padding-top: 10px;
+    border-bottom: 2px solid #92474b;
+}
+
+    .upload_type_list div.nav {
+        margin-right: 2px;
+        padding: 0 20px;
+        height: 33px;
+        border: 1px #ddd solid;
+        float: left;
+        cursor: pointer;
+        border-bottom: 0px;
+        line-height: 32px;
+        z-index: 40;
+        position: relative;
+        font-size: 14px;
+    }
+
+    .upload_type_list div.on {
+        margin-top: 1px;
+        border: 1px #7d383c solid;
+        border-bottom: 0;
+        z-index: 100;
+        color: white;
+        line-height: 33px;
+        background-color: #92474b;
+    }
+
+div.upload_item_show {
+    clear: left;
+    width: 911px;
+    height: 472px;
+    top: 10px;
+    position: relative;
+    z-index: 50;
+    left: 15px;
+}
+
+.work_code {
+    color: red;
+}
+
+.upload-tips {
+    background: url(/static/images/upload_tips.png);
+    color: #5F4516;
+    font-size: 14px;
+    font-family: Arial, Tahoma, sans-serif;
+    height: 35px;
+    line-height: 32px;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    width: 52px;
+    display: none;
+    font-size: 12px;
+    text-align: center;
+    line-height: 35px;
+}
+/*上传弹出框*/
+
+/*上传窗口*/
+.uploader_dialog {
+    z-index: 99999;
+    position: absolute;
+    width: 928px;
+    left: 50%;
+    margin-left: -473px;
+    border: 1px solid #747272;
+}
+
+.uploader_dialog_title {
+    height: 37px;
+    line-height: 37px;
+    background-color: #f3f3f3;
+    border-bottom: 1px #ddd solid;
+}
+
+    .uploader_dialog_title:hover {
+        cursor: move;
+    }
+
+    .uploader_dialog_title h2 {
+        color: black;
+        padding-left: 15px;
+        font-size: 11px;
+        display: inline-block;
+    }
+
+    .uploader_dialog_title a.uploader_close {
+        background: url(../../images/edit/editor/sprit_lit.png) -40px -180px no-repeat transparent;
+        display: inline-block;
+        width: 16px;
+        height: 17px;
+        float: right;
+        margin: 6px 6px 6px 6px;
+    }
+
+.uploader_dialog_content {
+    background-color: #fff;
+    height: 528px;
+}
+
+    .uploader_dialog_content h2 {
+        font-size: 14px;
+        padding: 18px 18px 18px 18px;
+    }
+
+    .uploader_dialog_content .import {
+        display: inline-block;
+        height: 36px;
+        width: 746px;
+        padding: 25px 15px;
+        margin-left: 6px;
+    }
+
+    .uploader_dialog_content .import_bar {
+        display: none;
+        position: relative;
+        height: 87px;
+        border-bottom: 1px dashed #D9D6D5;
+    }
+
+    .uploader_dialog_content .import .title {
+        font-size: 14px;
+        width: 118px;
+        display: inline-block;
+        line-height: 38px;
+        margin-right: 4px;
+    }
+
+    .uploader_dialog_content .import ul li {
+        float: left;
+        margin-right: 30px;
+    }
+
+    .uploader_dialog_content .site_img {
+        line-height: 34px;
+        font-size: 14px;
+        color: blue;
+    }
+
+    .uploader_dialog_content .go_edit {
+        position: absolute;
+        top: 10px;
+        margin-left: 18px;
+        margin-right: 25px;
+        text-align: center;
+        display: inline-block;
+        background: url(/static/images/editor/sprit_lit.png) 0 -60px no-repeat transparent;
+        width: 97px;
+        height: 35px;
+        background-position: -72px -140px;
+        color: white;
+        line-height: 35px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .uploader_dialog_content .zip_uploader {
+        height: 380px;
+    }
+
+    .uploader_dialog_content .mention {
+        color: #757575;
+        line-height: 1.7;
+        margin-left: 25px;
+    }
+
+        .uploader_dialog_content .mention ul li {
+            list-style-type: decimal;
+            margin-left: 20px;
+        }
+
+.upload_bar_holder {
+    height: 15px;
+    width: 340px;
+    overflow: hidden;
+    position: absolute;
+    right: 300px;
+    top: 5px;
+}
+
+    .upload_bar_holder .name {
+        width: 140px;
+        float: left;
+        height: 23px;
+        line-height: 13px;
+    }
+
+    .upload_bar_holder .bar_outer {
+        height: 23px;
+        width: 200px;
+        display: block;
+        position: relative;
+        background-color: #CCC;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .upload_bar_holder .bar {
+        height: 23px;
+        display: block;
+        position: absolute;
+        background-color: #309900;
+        overflow: hidden;
+    }
+
+    .upload_bar_holder .img_page {
+        color: red;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+/*上传窗口-最小化*/
+.uploader_dialog_min {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+    width: 150px;
+    height: 25px;
+    padding: 0 3px 0 3px;
+    background-color: #c0c0c0;
+    border: 1px solid #555555;
+}
+
+    .uploader_dialog_min span {
+        line-height: 25px;
+    }
+
+.upload_qq_tab
+{
+    height:38px;
+    background-color:#fafafa;
+    border-bottom:1px solid #cecece;
+}
+    .upload_qq_tab li
+    {
+        float:left;
+    }
+
+.upload_qq_tab li a
+{
+    display:block;
+    padding:0 15px 0 15px;
+    line-height:27px;
+    height:27px;
+    font-size:14px;
+    margin-top:10px;
+}
+
+.upload_qq_tab li a.cur
+{
+    background-color:#ffffff;
+    border:1px solid #cecece;
+    border-bottom:1px solid #ffffff;
+}
+
+.upload_item_tips
+{
+    background-color:#fef8b8;
+    margin-top:15px;
+    padding:10px;
+    line-height:20px;
+    overflow:hidden;
+
+}
+    .upload_item_tips h2
+    {
+        float:left;
+        padding:0px;
+    }
+    .upload_item_tips p
+    {
+        float:left;
+        margin-left:5px;
+    }
+.upload_item_filename
+{
+    margin-top:15px;
+
+}
+    .upload_item_filename span
+    {
+        font-size:14px;
+        vertical-align:middle;
+    }
+    .upload_item_filename input
+    {
+        height:22px;
+        line-height:22px;
+        width:277px;
+        padding:3px;
+    }
+
+    .upload_item_filename a
+    {
+        display:inline-block;
+        height:30px;
+        width:62px;
+        margin-left:5px;
+        vertical-align:middle;
+    }
+    .upload_item_filename a.btn_copy
+    {
+        background-image:url(/static/images/upload/upload_btn_copy.jpg)
+    }
+     .upload_item_filename a.btn_send
+    {
+        background-image:url(/static/images/upload/upload_btn_send.jpg)
+    }
+.upload_item_guide
+{
+    margin-top:15px;
+    border-top:2px solid #e5e5e5;
+}
+    .upload_item_guide h2
+    {
+        padding:0px;
+        line-height:30px;
+        color:#92484d;
+    }
+.upload_item_section
+{
+    margin-bottom:30px;
+}
+    .upload_item_section h2
+    {
+        padding:0px;
+        line-height:30px;
+        color:#666666;
+    }
+    .upload_item_section h2 b
+    {
+        color:#92484d;
+    }
+
+.upload_item_section img
+{
+    margin-left:30px;
+}
+.upload_item_section_step1, .upload_item_section_step2, .upload_item_section_step3, .upload_item_section_step4
+{
+    display:inline-block;
+    width:29px;
+    height:24px;
+    vertical-align:middle;
+}
+.upload_item_section_step1
+{
+    background-image:url(/static/images/upload/upload_step1.jpg);
+}
+.upload_item_section_step2
+{
+    background-image:url(/static/images/upload/upload_step2.jpg);
+}
+.upload_item_section_step3
+{
+    background-image:url(/static/images/upload/upload_step3.jpg);
+}
+.upload_item_section_step4
+{
+    background-image:url(/static/images/upload/upload_step4.jpg);
+}
+
+.upload_item_emailtitle
+{
+    margin-top:10px;
+    font-size:12px;
+}
+    .upload_item_emailtitle .tips1
+    {
+        color:#666666;
+
+    }
+    .upload_item_emailtitle .tips2
+    {
+        color:#92484d;
+    }

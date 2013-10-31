@@ -1,0 +1,398 @@
+#header-wrapper
+{
+    display: none;
+}
+/**************** font style ****************/
+#toptoolbar-wrapper
+{
+    margin: auto;
+    height: 40px;
+    line-height: 40px;
+    background: #4d1e24;
+    position: relative;
+    z-index: 1000;
+}
+
+#toptoolbar-wrapperq
+{
+    margin: auto;
+    height: 20px;
+    line-height: 20px;
+}
+
+#toptoolbar
+{
+    width: 960px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+}
+
+    #toptoolbar a
+    {
+        color: #e0c7be;
+        text-decoration: none;
+        height: 40px;
+        line-height: 40px;
+        display: block;
+        font-family: Verdana, Geneva, sans-serif;
+    }
+    #toptoolbar a:link,
+    #toptoolbar a:visited
+    {
+        color: #e0c7be;
+    }
+
+    #toptoolbar .login-toptoolbar
+    {
+        width: 200px;
+        height: 40px;
+        line-height: 40px;
+        float: left;
+    }
+
+.login-toptoolbar li
+{
+    float: left;
+}
+
+#toptoolbar .login-topindex
+{
+    width: 35px;
+    margin-right: 5px;
+    background: url(../../images/edit/toptoolbar-sep.png) right no-repeat;
+}
+
+#toptoolbar .nickname-toptoolbar
+{
+    float: right;
+    height: 40px;
+    line-height: 40px;
+    padding-right: 20px;
+}
+
+#toptoolbar .shopbox-toptoolbar
+{
+    float: right;
+    height: 40px;
+    line-height: 40px;
+}
+
+#toptoolbar .shopbox
+{
+    position: absolute;
+}
+
+    #toptoolbar .shopbox li
+    {
+        float: left;
+    }
+
+#toptoolbar .Triangle
+{
+    width: 20px;
+    height: 40px;
+    float: right;
+    padding-right: 10px;
+    background: url(../../images/edit/Triangle.png) no-repeat center;
+}
+
+#toptoolbar .shopboxsep
+{
+    padding-right: 30px;
+    background: url(../../images/edit/toptoolbar-sep.png) right no-repeat;
+}
+
+.shopbox-toptoolbar .shopboxsep
+{
+    float: right;
+}
+
+#toptoolbar .faq
+{
+    margin-left: 10px;
+    float: left;
+}
+
+#toptoolbar #sddm
+{
+    padding: 0;
+    float: left;
+    z-index: 30;
+    height: 33px;
+    /*background: url(../../static/images/topsddm.png) no-repeat;*/
+    padding-right: 20px;
+}
+
+    #toptoolbar #sddm li .more
+    {
+        width: 13px;
+        height: 10px;
+        background: url(../../images/edit/topsddm.png) no-repeat;
+        display: block;
+        position: absolute;
+        top: 16px;
+        right: -3px;
+        background-position: -71px -15px;
+    }
+
+    #toptoolbar #sddm li .cart
+    {
+        width: 34px;
+        height: 19px;
+        background: url(../../images/edit/topsddm.png) no-repeat;
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 23px;
+        background-position: -105px -10px;
+    }
+
+    #toptoolbar #sddm li
+    {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        float: left;
+        font: bold 12px arial;
+        margin-right: 20px;
+    }
+
+    #toptoolbar #sddm .ft
+    {
+        padding-left: 40px;
+    }
+
+    #toptoolbar #sddm li a
+    {
+        display: block;
+        margin: 0 1px 0 0;
+        padding: 0px 10px;
+        width: 60px;
+        font-weight: normal;
+        color: ##E0C7BE;
+        text-align: center;
+        text-decoration: none;
+        position: relative;
+    }
+
+    #toptoolbar #sddm div
+    {
+        position: absolute;
+        visibility: hidden;
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        border: 1px solid #dedede;
+    }
+
+    #toptoolbar #sddm #m1
+    {
+        margin-left: 10px;
+    }
+
+    #toptoolbar #sddm #m2
+    {
+        margin-left: 20px;
+    }
+
+    #toptoolbar #sddm div a
+    {
+        position: relative;
+        display: block;
+        margin: 0;
+        padding: 5px 10px;
+        width: auto;
+        white-space: nowrap;
+        text-align: left;
+        text-decoration: none;
+        background: #fff;
+        color: #7D7373;
+        font: 12px arial;
+    }
+
+        #toptoolbar #sddm div a:hover
+        {
+            background: #dedede;
+            color: #FEF2EA;
+        }
+
+        #toptoolbar #sddm div a:link,
+        #toptoolbar #sddm div a:visited
+        {
+            height: 20px;
+            color: #59524D;
+            line-height: 20px;
+        }
+/**************** HEADER ELEMENTS ****************/
+#header-wrapper
+{
+    height: 110px;
+    margin: auto;
+}
+
+    #header-wrapper *
+    {
+        color: #888;
+    }
+
+#header-pattern
+{
+    margin: auto;
+    height: 110px;
+}
+
+#header
+{
+    width: 960px;
+    height: 110px;
+    margin: 0 auto;
+}
+
+a#headerlogo:link,
+a#headerlogo:visited
+{
+    float: left;
+    height: 110px;
+    line-height: 110px;
+    text-decoration: none !important;
+}
+
+#headerlogo
+{
+    height: 110px;
+    margin-left: -30px;
+    line-height: 110px;
+    width: 298px;
+    background: url(../../images/edit/m_logo.png) no-repeat center;
+}
+
+#header #main-menu
+{
+    width: 455px;
+    float: right;
+}
+
+.menu-header
+{
+    float: left;
+    height: 0px;
+}
+
+    .menu-header ul
+    {
+        float: left;
+        list-style: none;
+        height: 56px;
+        line-height: 56px;
+        margin-top: 8px;
+    }
+
+        .menu-header ul li
+        {
+            float: left;
+            height: 52px;
+            padding-right: 30px;
+            line-height: 52px;
+            margin: 1px 0px;
+            position: relative;
+        }
+
+            .menu-header ul li a:link, .menu-header ul li a:visited
+            {
+                height: 34px;
+                overflow: hidden;
+                display: block;
+                float: left;
+                font-weight: bold;
+                text-decoration: none;
+                color: #7d7373;
+                font-size: 16px;
+                padding: 8px 0 8px 0;
+            }
+
+    .menu-header #red
+    {
+        color: #7f434a;
+        border-bottom: 3px #7f434a solid;
+    }
+
+    .menu-header ul li a:hover, .menu-header ul li a.current,
+    .menu-header ul li a:active
+    {
+        color: #7f434a !important;
+        border-bottom: 3px #7f434a solid;
+    }
+
+    .menu-header ul li.last-child a:link,
+    .menu-header ul li.last-child a:visited
+    {
+        margin-right: 15px;
+    }
+
+    .menu-header ul li .sf-sub-indicator
+    {
+        display: none;
+    }
+
+    .menu-header ul li span.description
+    {
+        font-size: 8pt;
+        color: #c3c3be;
+        display: block;
+        width: auto;
+    }
+
+    .menu-header ul ul ul
+    {
+        left: 100%;
+        top: 0;
+    }
+
+#header .day
+{
+    float: right;
+    height: 79px;
+    width: 79px;
+    background: url(../../images/edit/day.png) no-repeat;
+}
+
+    #header .day span
+    {
+        padding-left: 10px;
+        color: #88230e;
+        width: 79px;
+        line-height: 30px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    #header .day p
+    {
+        line-height: 18px;
+        font-size: 22px;
+        color: #fdf8e6;
+        font-weight: bold;
+        text-align: center;
+    }
+
+.compatable
+{
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    background-color: rgb(243, 241, 197);
+}
+
+    .compatable a
+    {
+        text-decoration: none;
+        color: #28b !important;
+    }
+
+    .compatable p, .compatable a
+    {
+        font-size: 14px;
+    }

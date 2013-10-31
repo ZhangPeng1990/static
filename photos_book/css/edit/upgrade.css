@@ -1,0 +1,516 @@
+/*推荐升级系统样式*/
+.dialog_upgrade
+{
+    position: absolute;
+    left: 200px;
+    top: 200px;
+    width: 764px;
+    min-height: 600px;
+    border: 1px solid #8e8f8e;
+    z-index: 99999;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+    .dialog_upgrade .upgrade_title
+    {
+        height: 32px;
+        background-color: #a6a7a6;
+    }
+
+        .dialog_upgrade .upgrade_title h2
+        {
+            color: #fff;
+            line-height: 32px;
+            font-size: 15px;
+            margin-left: 14px;
+        }
+
+    .dialog_upgrade .upgrade_content
+    {
+        width: 764px;
+        background-color: #fff;
+    }
+
+    .dialog_upgrade .upgrade_bookdetail
+    {
+        margin-top: 42px;
+        margin-left: 50px;
+        overflow: hidden;
+    }
+
+    .dialog_upgrade .upgrade_product
+    {
+        float: left;
+    }
+
+        .dialog_upgrade .upgrade_product h2
+        {
+            color: #999999;
+            font-size: 14px;
+            line-height: 25px;
+        }
+
+        .dialog_upgrade .upgrade_product .upgrade_detail
+        {
+            position: relative;
+            float: left;
+        }
+
+            .dialog_upgrade .upgrade_product .upgrade_detail img
+            {
+                border: 1px solid #8e8f8e;
+                padding: 5px;
+            }
+
+            .dialog_upgrade .upgrade_product .upgrade_detail .price_info
+            {
+                position: absolute;
+                left: 6px;
+                bottom: 9px;
+                width: 210px;
+                height: 25px;
+                background-color: #000;
+                opacity: 0.5;
+            }
+
+                .dialog_upgrade .upgrade_product .upgrade_detail .price_info .detail
+                {
+                    line-height: 25px;
+                    color: #fff;
+                    margin-left: 5px;
+                }
+
+                .dialog_upgrade .upgrade_product .upgrade_detail .price_info .price
+                {
+                    line-height: 25px;
+                    color: #ff6a00;
+                    font-size: 16px;
+                    float: right;
+                    margin-right: 5px;
+                }
+
+        .dialog_upgrade .upgrade_product p
+        {
+            padding-top: 15px;
+            color: #8e8f8e;
+            line-height: 22px;
+            clear: both;
+            color: #666666;
+            font-size: 12px;
+        }
+
+        .dialog_upgrade .upgrade_product a
+        {
+            color: #003399;
+            font-size: 12px;
+        }
+
+    .dialog_upgrade .upgrade_up
+    {
+        text-align: center;
+        padding-top: 64px;
+    }
+
+        .dialog_upgrade .upgrade_up img
+        {
+        }
+
+        .dialog_upgrade .upgrade_up p
+        {
+            color: #ff9900;
+            font-size: 14px;
+            line-height: 40px;
+        }
+
+
+
+    .dialog_upgrade .upgrade_pagecount
+    {
+        float: left;
+        margin-left: 10px;
+        margin-top: 25px;
+    }
+
+        .dialog_upgrade .upgrade_pagecount h2
+        {
+            color: #999999;
+            font-size: 12px;
+            line-height: 12px;
+        }
+
+        .dialog_upgrade .upgrade_pagecount ul
+        {
+            overflow: hidden;
+            width: 70px;
+            padding-bottom: 15px;
+        }
+
+            .dialog_upgrade .upgrade_pagecount ul li
+            {
+                float: left;
+                margin-right: 3px;
+                margin-top: 3px;
+                width: 30px;
+                height: 30px;
+            }
+
+                .dialog_upgrade .upgrade_pagecount ul li a
+                {
+                    color: #fff;
+                    line-height: 32px;
+                    text-align: center;
+                    display: block;
+                    background-image: url(/static/images/upgrade/upgrade_bg1.png);
+                    width: 32px;
+                    height: 32px;
+                }
+
+                    .dialog_upgrade .upgrade_pagecount ul li a:hover
+                    {
+                        background-image: url(/static/images/upgrade/upgrade_bg2.png);
+                        background-position: 1px 0px;
+                    }
+
+                    .dialog_upgrade .upgrade_pagecount ul li a.cur
+                    {
+                        background-image: url(/static/images/upgrade/upgrade_bg2.png);
+                        background-position: 1px 0px;
+                    }
+
+    .dialog_upgrade .upgrade_up
+    {
+        float: left;
+        width: 146px;
+        height: 20px;
+    }
+
+    .dialog_upgrade .upgrade_selector
+    {
+        clear: both;
+        background-color: #f7f8f7;
+        border-top: 1px dashed #c8c9c8;
+        height: 160px;
+        margin-top: 30px;
+    }
+
+        .dialog_upgrade .upgrade_selector .upgrade_selector_title
+        {
+            margin-top: 18px;
+            margin-left: 50px;
+            color: #a6a7a6;
+        }
+
+        .dialog_upgrade .upgrade_selector ul
+        {
+            margin-left: 50px;
+            margin-top: 10px;
+        }
+
+            .dialog_upgrade .upgrade_selector ul li
+            {
+                float: left;
+                height: 90px;
+                margin-right: 30px;
+            }
+
+                .dialog_upgrade .upgrade_selector ul li a:hover
+                {
+                    opacity: 0.8;
+                }
+
+    .dialog_upgrade .upgrade_oprator
+    {
+        float: left;
+        margin-left: 90px;
+        margin-top: 34px;
+    }
+
+        .dialog_upgrade .upgrade_oprator .hl_price
+        {
+            color: #ff9900;
+            font-size: 18px;
+        }
+
+        .dialog_upgrade .upgrade_oprator a
+        {
+            margin-left: 10px;
+            font-size: 12px;
+            color: #5560bd;
+        }
+
+        .dialog_upgrade .upgrade_oprator p
+        {
+            font-size: 14px;
+            line-height: 30px;
+        }
+
+        .dialog_upgrade .upgrade_oprator .btn_upgrade
+        {
+            display: inline-block;
+            width: 77px;
+            height: 29px;
+            background-image: url(/static/images/upgrade/upgrade_btn.png);
+            color: #fff;
+            line-height: 29px;
+            text-align: center;
+            font-size: 14px;
+            margin-left: 0px;
+        }
+
+            .dialog_upgrade .upgrade_oprator .btn_upgrade:hover
+            {
+                opacity: 0.8;
+            }
+
+/*规格选择样式*/
+.dialog_selector
+{
+    position: absolute;
+    left: 200px;
+    top: 200px;
+    width: 485px;
+    min-height: 420px;
+    border: 1px solid #8e8f8e;
+    z-index: 99999;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+    .dialog_selector .title
+    {
+        height: 32px;
+        background-color: #a6a7a6;
+    }
+
+        .dialog_selector .title h2
+        {
+            color: #fff;
+            line-height: 32px;
+            font-size: 15px;
+            margin-left: 14px;
+        }
+
+    .dialog_selector .content
+    {
+        width: 485px;
+        background-color: #fff;
+    }
+
+    .dialog_selector .bookdetail
+    {
+        margin-top: 30px;
+        margin-left: 60px;
+        overflow: hidden;
+    }
+
+    .dialog_selector .product
+    {
+        float: left;
+        
+    }
+
+        .dialog_selector .product h2
+        {
+            color: #999999;
+            font-size: 14px;
+            line-height: 25px;
+        }
+
+        .dialog_selector .product .detail
+        {
+            position: relative;
+            float: left;
+            margin-top:7px;
+        }
+
+            .dialog_selector .product .detail img
+            {
+                border: 1px solid #8e8f8e;
+                padding: 5px;
+            }
+
+    .dialog_selector .pagecount
+    {
+        float: left;
+        margin-left: 16px;
+        margin-top: 25px;
+    }
+
+        .dialog_selector .pagecount h2
+        {
+            color: #999999;
+            font-size: 12px;
+            line-height: 12px;
+        }
+
+        .dialog_selector .pagecount ul
+        {
+            overflow: hidden;
+            width: 70px;
+            padding-bottom: 15px;
+        }
+
+            .dialog_selector .pagecount ul li
+            {
+                float: left;
+                margin-right: 3px;
+                margin-top: 3px;
+                width: 30px;
+                height: 30px;
+            }
+
+                .dialog_selector .pagecount ul li a
+                {
+                    color: #fff;
+                    line-height: 32px;
+                    text-align: center;
+                    display: block;
+                    background-image: url(/static/images/upgrade/upgrade_bg1.png);
+                    width: 32px;
+                    height: 32px;
+                }
+
+                    .dialog_selector .pagecount ul li a:hover
+                    {
+                        background-image: url(/static/images/upgrade/upgrade_bg2.png);
+                        background-position: 1px 0px;
+                    }
+
+                    .dialog_selector .pagecount ul li a.cur
+                    {
+                        background-image: url(/static/images/upgrade/upgrade_bg2.png);
+                        background-position: 1px 0px;
+                    }
+    .dialog_selector .info
+    {
+        clear:both;
+        height:45px;
+        padding-top:7px;
+    }
+        .dialog_selector .info .info_title
+        {
+            line-height:25px;
+            font-size:14px;
+            color:#999999;
+        }
+        .dialog_selector .info .info_title span
+        {
+            color:#ff9900;
+        }
+
+        .dialog_selector .info .info_tips
+        {
+            line-height:25px;
+            font-size:14px;
+            color:#ff9900;
+        }
+
+    .dialog_selector .operator_bar
+    {
+        clear: both;
+        background-color: #f7f8f7;
+        border-top: 1px dashed #c8c9c8;
+        height: 70px;
+        margin-top: 30px;
+        position:relative;
+    }
+
+        .dialog_selector .operator_bar h2
+        {
+            position:absolute;
+            left:60px;
+            top:20px;
+            color:#999999;
+        }
+        .dialog_selector .operator_bar h2 a
+        {
+            color:#003399;
+
+        }
+        .dialog_selector .operator_bar .btn_go
+        {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            display: inline-block;
+            width: 77px;
+            height: 29px;
+            background-image: url(/static/images/upgrade/upgrade_btn.png);
+            color: #fff;
+            line-height: 29px;
+            text-align: center;
+            font-size: 14px;
+            margin-left: 0px;
+        }
+
+            .dialog_selector .operator_bar .btn_go:hover
+            {
+                opacity: 0.8;
+            }
+
+    .dialog_selector .exchange
+    {
+        margin-left:70px;
+        margin-top:120px;
+    }
+
+    .dialog_selector .exchange h2
+    {
+        font-size:16px;
+        color:#999999;
+    }
+
+        .dialog_selector .exchange .exchange_input
+        {
+            margin-top:22px;
+            width:345px;
+            height:51px;
+            background-image:url(/static/images/upgrade/exchange_input.png);
+        }
+
+    .dialog_selector .exchange .exchange_input input
+    {
+        margin:3px;
+        border:none;
+        height:45px;
+        width:248px;
+        font-size:24px;
+        line-height:45px;
+        letter-spacing:3px;
+        float:left;
+        color:#999999;
+
+    }
+    .dialog_selector .exchange .exchange_input a
+    {
+        float:right;
+        width:87px;
+        height:51px;
+        background-image:url(/static/images/upgrade/exchange_btn.png);
+    }
+
+    .dialog_selector .exchange_bar
+    {
+        clear: both;
+        background-color: #f7f8f7;
+        border-top: 1px dashed #c8c9c8;
+        height: 70px;
+        margin-top: 104px;
+        position:relative;
+    }
+
+            .dialog_selector .exchange_bar .btn_back
+        {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            display: inline-block;
+            width: 54px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            font-size: 14px;
+            margin-left: 0px;
+        }
+
