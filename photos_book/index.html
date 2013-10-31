@@ -11,278 +11,261 @@
 <link rel="stylesheet" type="text/css" href="css/edit/upgrade.css">
 <link rel="stylesheet" type="text/css" href="css/edit/lightbox.css">
 <link href="css/edit/header.css" rel="stylesheet">
-    <style type="text/css">
-        #header-wrapper
-        {
-            display: none;
-        }
-    </style>
 <link href="css/edit/upload.css" rel="stylesheet" type="text/css">
-<style type="text/css" charset="utf-8">/* See license.txt for terms of usage */
-/** reset styling **/
-.firebugResetStyles {
-    z-index: 2147483646 !important;
-    top: 0 !important;
-    left: 0 !important;
-    display: block !important;
-    border: 0 none !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    outline: 0 !important;
-    min-width: 0 !important;
-    max-width: none !important;
-    min-height: 0 !important;
-    max-height: none !important;
-    position: fixed !important;
-    transform: rotate(0deg) !important;
-    transform-origin: 50% 50% !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-    background: transparent none !important;
-    pointer-events: none !important;
-    white-space: normal !important;
-}
-
-.firebugBlockBackgroundColor {
-    background-color: transparent !important;
-}
-
-.firebugResetStyles:before, .firebugResetStyles:after {
-    content: "" !important;
-}
-/**actual styling to be modified by firebug theme**/
-.firebugCanvas {
-    display: none !important;
-}
-
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-.firebugLayoutBox {
-    width: auto !important;
-    position: static !important;
-}
-
-.firebugLayoutBoxOffset {
-    opacity: 0.8 !important;
-    position: fixed !important;
-}
-
-.firebugLayoutLine {
-    opacity: 0.4 !important;
-    background-color: #000000 !important;
-}
-
-.firebugLayoutLineLeft, .firebugLayoutLineRight {
-    width: 1px !important;
-    height: 100% !important;
-}
-
-.firebugLayoutLineTop, .firebugLayoutLineBottom {
-    width: 100% !important;
-    height: 1px !important;
-}
-
-.firebugLayoutLineTop {
-    margin-top: -1px !important;
-    border-top: 1px solid #999999 !important;
-}
-
-.firebugLayoutLineRight {
-    border-right: 1px solid #999999 !important;
-}
-
-.firebugLayoutLineBottom {
-    border-bottom: 1px solid #999999 !important;
-}
-
-.firebugLayoutLineLeft {
-    margin-left: -1px !important;
-    border-left: 1px solid #999999 !important;
-}
-
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-.firebugLayoutBoxParent {
-    border-top: 0 none !important;
-    border-right: 1px dashed #E00 !important;
-    border-bottom: 1px dashed #E00 !important;
-    border-left: 0 none !important;
-    position: fixed !important;
-    width: auto !important;
-}
-
-.firebugRuler{
-    position: absolute !important;
-}
-
-.firebugRulerH {
-    top: -15px !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 14px !important;
-    background: url("data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%13%88%00%00%00%0E%08%02%00%00%00L%25a%0A%00%00%00%04gAMA%00%00%D6%D8%D4OX2%00%00%00%19tEXtSoftware%00Adobe%20ImageReadyq%C9e%3C%00%00%04%F8IDATx%DA%EC%DD%D1n%E2%3A%00E%D1%80%F8%FF%EF%E2%AF2%95%D0D4%0E%C1%14%B0%8Fa-%E9%3E%CC%9C%87n%B9%81%A6W0%1C%A6i%9A%E7y%0As8%1CT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AATE9%FE%FCw%3E%9F%AF%2B%2F%BA%97%FDT%1D~K(%5C%9D%D5%EA%1B%5C%86%B5%A9%BDU%B5y%80%ED%AB*%03%FAV9%AB%E1%CEj%E7%82%EF%FB%18%BC%AEJ8%AB%FA'%D2%BEU9%D7U%ECc0%E1%A2r%5DynwVi%CFW%7F%BB%17%7Dy%EACU%CD%0E%F0%FA%3BX%FEbV%FEM%9B%2B%AD%BE%AA%E5%95v%AB%AA%E3E5%DCu%15rV9%07%B5%7F%B5w%FCm%BA%BE%AA%FBY%3D%14%F0%EE%C7%60%0EU%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5JU%88%D3%F5%1F%AE%DF%3B%1B%F2%3E%DAUCNa%F92%D02%AC%7Dm%F9%3A%D4%F2%8B6%AE*%BF%5C%C2Ym~9g5%D0Y%95%17%7C%C8c%B0%7C%18%26%9CU%CD%13i%F7%AA%90%B3Z%7D%95%B4%C7%60%E6E%B5%BC%05%B4%FBY%95U%9E%DB%FD%1C%FC%E0%9F%83%7F%BE%17%7DkjMU%E3%03%AC%7CWj%DF%83%9An%BCG%AE%F1%95%96yQ%0Dq%5Dy%00%3Et%B5'%FC6%5DS%95pV%95%01%81%FF'%07%00%00%00%00%00%00%00%00%00%F8x%C7%F0%BE%9COp%5D%C9%7C%AD%E7%E6%EBV%FB%1E%E0(%07%E5%AC%C6%3A%ABi%9C%8F%C6%0E9%AB%C0'%D2%8E%9F%F99%D0E%B5%99%14%F5%0D%CD%7F%24%C6%DEH%B8%E9rV%DFs%DB%D0%F7%00k%FE%1D%84%84%83J%B8%E3%BA%FB%EF%20%84%1C%D7%AD%B0%8E%D7U%C8Y%05%1E%D4t%EF%AD%95Q%BF8w%BF%E9%0A%BF%EB%03%00%00%00%00%00%00%00%00%00%B8vJ%8E%BB%F5%B1u%8Cx%80%E1o%5E%CA9%AB%CB%CB%8E%03%DF%1D%B7T%25%9C%D5(%EFJM8%AB%CC'%D2%B2*%A4s%E7c6%FB%3E%FA%A2%1E%80~%0E%3E%DA%10x%5D%95Uig%15u%15%ED%7C%14%B6%87%A1%3B%FCo8%A8%D8o%D3%ADO%01%EDx%83%1A~%1B%9FpP%A3%DC%C6'%9C%95gK%00%00%00%00%00%00%00%00%00%20%D9%C9%11%D0%C0%40%AF%3F%EE%EE%92%94%D6%16X%B5%BCMH%15%2F%BF%D4%A7%C87%F1%8E%F2%81%AE%AAvzr%DA2%ABV%17%7C%E63%83%E7I%DC%C6%0Bs%1B%EF6%1E%00%00%00%00%00%00%00%00%00%80cr%9CW%FF%7F%C6%01%0E%F1%CE%A5%84%B3%CA%BC%E0%CB%AA%84%CE%F9%BF)%EC%13%08WU%AE%AB%B1%AE%2BO%EC%8E%CBYe%FE%8CN%ABr%5Dy%60~%CFA%0D%F4%AE%D4%BE%C75%CA%EDVB%EA(%B7%F1%09g%E5%D9%12%00%00%00%00%00%00%00%00%00H%F6%EB%13S%E7y%5E%5E%FB%98%F0%22%D1%B2'%A7%F0%92%B1%BC%24z3%AC%7Dm%60%D5%92%B4%7CEUO%5E%F0%AA*%3BU%B9%AE%3E%A0j%94%07%A0%C7%A0%AB%FD%B5%3F%A0%F7%03T%3Dy%D7%F7%D6%D4%C0%AAU%D2%E6%DFt%3F%A8%CC%AA%F2%86%B9%D7%F5%1F%18%E6%01%F8%CC%D5%9E%F0%F3z%88%AA%90%EF%20%00%00%00%00%00%00%00%00%00%C0%A6%D3%EA%CFi%AFb%2C%7BB%0A%2B%C3%1A%D7%06V%D5%07%A8r%5D%3D%D9%A6%CAu%F5%25%CF%A2%99%97zNX%60%95%AB%5DUZ%D5%FBR%03%AB%1C%D4k%9F%3F%BB%5C%FF%81a%AE%AB'%7F%F3%EA%FE%F3z%94%AA%D8%DF%5B%01%00%00%00%00%00%00%00%00%00%8E%FB%F3%F2%B1%1B%8DWU%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*UiU%C7%BBe%E7%F3%B9%CB%AAJ%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5*%AAj%FD%C6%D4%5Eo%90%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5%86%AF%1B%9F%98%DA%EBm%BBV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%AD%D6%E4%F58%01%00%00%00%00%00%00%00%00%00%00%00%00%00%40%85%7F%02%0C%008%C2%D0H%16j%8FX%00%00%00%00IEND%AEB%60%82") repeat-x !important;
-    border-top: 1px solid #BBBBBB !important;
-    border-right: 1px dashed #BBBBBB !important;
-    border-bottom: 1px solid #000000 !important;
-}
-
-.firebugRulerV {
-    top: 0 !important;
-    left: -15px !important;
-    width: 14px !important;
-    height: 100% !important;
-    background: url("data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%00%0E%00%00%13%88%08%02%00%00%00%0E%F5%CB%10%00%00%00%04gAMA%00%00%D6%D8%D4OX2%00%00%00%19tEXtSoftware%00Adobe%20ImageReadyq%C9e%3C%00%00%06~IDATx%DA%EC%DD%D1v%A20%14%40Qt%F1%FF%FF%E4%97%D9%07%3BT%19%92%DC%40(%90%EEy%9A5%CB%B6%E8%F6%9Ac%A4%CC0%84%FF%DC%9E%CF%E7%E3%F1%88%DE4%F8%5D%C7%9F%2F%BA%DD%5E%7FI%7D%F18%DDn%BA%C5%FB%DF%97%BFk%F2%10%FF%FD%B4%F2M%A7%FB%FD%FD%B3%22%07p%8F%3F%AE%E3%F4S%8A%8F%40%EEq%9D%BE8D%F0%0EY%A1Uq%B7%EA%1F%81%88V%E8X%3F%B4%CEy%B7h%D1%A2E%EBohU%FC%D9%AF2fO%8BBeD%BE%F7X%0C%97%A4%D6b7%2Ck%A5%12%E3%9B%60v%B7r%C7%1AI%8C%BD%2B%23r%00c0%B2v%9B%AD%CA%26%0C%1Ek%05A%FD%93%D0%2B%A1u%8B%16-%95q%5Ce%DCSO%8E%E4M%23%8B%F7%C2%FE%40%BB%BD%8C%FC%8A%B5V%EBu%40%F9%3B%A72%FA%AE%8C%D4%01%CC%B5%DA%13%9CB%AB%E2I%18%24%B0n%A9%0CZ*Ce%9C%A22%8E%D8NJ%1E%EB%FF%8F%AE%CAP%19*%C3%BAEKe%AC%D1%AAX%8C*%DEH%8F%C5W%A1e%AD%D4%B7%5C%5B%19%C5%DB%0D%EF%9F%19%1D%7B%5E%86%BD%0C%95%A12%AC%5B*%83%96%CAP%19%F62T%86%CAP%19*%83%96%CA%B8Xe%BC%FE)T%19%A1%17xg%7F%DA%CBP%19*%C3%BA%A52T%86%CAP%19%F62T%86%CA%B0n%A9%0CZ%1DV%C6%3D%F3%FCH%DE%B4%B8~%7F%5CZc%F1%D6%1F%AF%84%F9%0F6%E6%EBVt9%0E~%BEr%AF%23%B0%97%A12T%86%CAP%19%B4T%86%CA%B8Re%D8%CBP%19*%C3%BA%A52huX%19%AE%CA%E5%BC%0C%7B%19*CeX%B7h%A9%0C%95%E1%BC%0C%7B%19*CeX%B7T%06%AD%CB%5E%95%2B%BF.%8F%C5%97%D5%E4%7B%EE%82%D6%FB%CF-%9C%FD%B9%CF%3By%7B%19%F62T%86%CA%B0n%D1R%19*%A3%D3%CA%B0%97%A12T%86uKe%D0%EA%B02*%3F1%99%5DB%2B%A4%B5%F8%3A%7C%BA%2B%8Co%7D%5C%EDe%A8%0C%95a%DDR%19%B4T%C66%82fA%B2%ED%DA%9FC%FC%17GZ%06%C9%E1%B3%E5%2C%1A%9FoiB%EB%96%CA%A0%D5qe4%7B%7D%FD%85%F7%5B%ED_%E0s%07%F0k%951%ECr%0D%B5C%D7-g%D1%A8%0C%EB%96%CA%A0%A52T%C6)*%C3%5E%86%CAP%19%D6-%95A%EB*%95q%F8%BB%E3%F9%AB%F6%E21%ACZ%B7%22%B7%9B%3F%02%85%CB%A2%5B%B7%BA%5E%B7%9C%97%E1%BC%0C%EB%16-%95%A12z%AC%0C%BFc%A22T%86uKe%D0%EA%B02V%DD%AD%8A%2B%8CWhe%5E%AF%CF%F5%3B%26%CE%CBh%5C%19%CE%CB%B0%F3%A4%095%A1%CAP%19*Ce%A8%0C%3BO*Ce%A8%0C%95%A12%3A%AD%8C%0A%82%7B%F0v%1F%2FD%A9%5B%9F%EE%EA%26%AF%03%CA%DF9%7B%19*Ce%A8%0C%95%A12T%86%CA%B8Ze%D8%CBP%19*Ce%A8%0C%95%D1ae%EC%F7%89I%E1%B4%D7M%D7P%8BjU%5C%BB%3E%F2%20%D8%CBP%19*Ce%A8%0C%95%A12T%C6%D5*%C3%5E%86%CAP%19*Ce%B4O%07%7B%F0W%7Bw%1C%7C%1A%8C%B3%3B%D1%EE%AA%5C%D6-%EBV%83%80%5E%D0%CA%10%5CU%2BD%E07YU%86%CAP%19*%E3%9A%95%91%D9%A0%C8%AD%5B%EDv%9E%82%FFKOee%E4%8FUe%A8%0C%95%A12T%C6%1F%A9%8C%C8%3D%5B%A5%15%FD%14%22r%E7B%9F%17l%F8%BF%ED%EAf%2B%7F%CF%ECe%D8%CBP%19*Ce%A8%0C%95%E1%93~%7B%19%F62T%86%CAP%19*Ce%A8%0C%E7%13%DA%CBP%19*Ce%A8%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4h%A9%0C%B3E%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4h%A9%0C%B3E%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4%AE%A4%F5%25%C0%00%DE%BF%5C'%0F%DA%B8q%00%00%00%00IEND%AEB%60%82") repeat-y !important;
-    border-left: 1px solid #BBBBBB !important;
-    border-right: 1px solid #000000 !important;
-    border-bottom: 1px dashed #BBBBBB !important;
-}
-
-.overflowRulerX > .firebugRulerV {
-    left: 0 !important;
-}
-
-.overflowRulerY > .firebugRulerH {
-    top: 0 !important;
-}
-
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-.fbProxyElement {
-    position: fixed !important;
-    pointer-events: auto !important;
-}
-</style>
-    
-<style type="text/css" charset="utf-8">/* See license.txt for terms of usage */
-/** reset styling **/
-.firebugResetStyles {
-    z-index: 2147483646 !important;
-    top: 0 !important;
-    left: 0 !important;
-    display: block !important;
-    border: 0 none !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    outline: 0 !important;
-    min-width: 0 !important;
-    max-width: none !important;
-    min-height: 0 !important;
-    max-height: none !important;
-    position: fixed !important;
-    transform: rotate(0deg) !important;
-    transform-origin: 50% 50% !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-    background: transparent none !important;
-    pointer-events: none !important;
-    white-space: normal !important;
-}
-
-.firebugBlockBackgroundColor {
-    background-color: transparent !important;
-}
-
-.firebugResetStyles:before, .firebugResetStyles:after {
-    content: "" !important;
-}
-/**actual styling to be modified by firebug theme**/
-.firebugCanvas {
-    display: none !important;
-}
-
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-.firebugLayoutBox {
-    width: auto !important;
-    position: static !important;
-}
-
-.firebugLayoutBoxOffset {
-    opacity: 0.8 !important;
-    position: fixed !important;
-}
-
-.firebugLayoutLine {
-    opacity: 0.4 !important;
-    background-color: #000000 !important;
-}
-
-.firebugLayoutLineLeft, .firebugLayoutLineRight {
-    width: 1px !important;
-    height: 100% !important;
-}
-
-.firebugLayoutLineTop, .firebugLayoutLineBottom {
-    width: 100% !important;
-    height: 1px !important;
-}
-
-.firebugLayoutLineTop {
-    margin-top: -1px !important;
-    border-top: 1px solid #999999 !important;
-}
-
-.firebugLayoutLineRight {
-    border-right: 1px solid #999999 !important;
-}
-
-.firebugLayoutLineBottom {
-    border-bottom: 1px solid #999999 !important;
-}
-
-.firebugLayoutLineLeft {
-    margin-left: -1px !important;
-    border-left: 1px solid #999999 !important;
-}
-
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-.firebugLayoutBoxParent {
-    border-top: 0 none !important;
-    border-right: 1px dashed #E00 !important;
-    border-bottom: 1px dashed #E00 !important;
-    border-left: 0 none !important;
-    position: fixed !important;
-    width: auto !important;
-}
-
-.firebugRuler{
-    position: absolute !important;
-}
-
-.firebugRulerH {
-    top: -15px !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 14px !important;
-    background: url("data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%13%88%00%00%00%0E%08%02%00%00%00L%25a%0A%00%00%00%04gAMA%00%00%D6%D8%D4OX2%00%00%00%19tEXtSoftware%00Adobe%20ImageReadyq%C9e%3C%00%00%04%F8IDATx%DA%EC%DD%D1n%E2%3A%00E%D1%80%F8%FF%EF%E2%AF2%95%D0D4%0E%C1%14%B0%8Fa-%E9%3E%CC%9C%87n%B9%81%A6W0%1C%A6i%9A%E7y%0As8%1CT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AATE9%FE%FCw%3E%9F%AF%2B%2F%BA%97%FDT%1D~K(%5C%9D%D5%EA%1B%5C%86%B5%A9%BDU%B5y%80%ED%AB*%03%FAV9%AB%E1%CEj%E7%82%EF%FB%18%BC%AEJ8%AB%FA'%D2%BEU9%D7U%ECc0%E1%A2r%5DynwVi%CFW%7F%BB%17%7Dy%EACU%CD%0E%F0%FA%3BX%FEbV%FEM%9B%2B%AD%BE%AA%E5%95v%AB%AA%E3E5%DCu%15rV9%07%B5%7F%B5w%FCm%BA%BE%AA%FBY%3D%14%F0%EE%C7%60%0EU%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5JU%88%D3%F5%1F%AE%DF%3B%1B%F2%3E%DAUCNa%F92%D02%AC%7Dm%F9%3A%D4%F2%8B6%AE*%BF%5C%C2Ym~9g5%D0Y%95%17%7C%C8c%B0%7C%18%26%9CU%CD%13i%F7%AA%90%B3Z%7D%95%B4%C7%60%E6E%B5%BC%05%B4%FBY%95U%9E%DB%FD%1C%FC%E0%9F%83%7F%BE%17%7DkjMU%E3%03%AC%7CWj%DF%83%9An%BCG%AE%F1%95%96yQ%0Dq%5Dy%00%3Et%B5'%FC6%5DS%95pV%95%01%81%FF'%07%00%00%00%00%00%00%00%00%00%F8x%C7%F0%BE%9COp%5D%C9%7C%AD%E7%E6%EBV%FB%1E%E0(%07%E5%AC%C6%3A%ABi%9C%8F%C6%0E9%AB%C0'%D2%8E%9F%F99%D0E%B5%99%14%F5%0D%CD%7F%24%C6%DEH%B8%E9rV%DFs%DB%D0%F7%00k%FE%1D%84%84%83J%B8%E3%BA%FB%EF%20%84%1C%D7%AD%B0%8E%D7U%C8Y%05%1E%D4t%EF%AD%95Q%BF8w%BF%E9%0A%BF%EB%03%00%00%00%00%00%00%00%00%00%B8vJ%8E%BB%F5%B1u%8Cx%80%E1o%5E%CA9%AB%CB%CB%8E%03%DF%1D%B7T%25%9C%D5(%EFJM8%AB%CC'%D2%B2*%A4s%E7c6%FB%3E%FA%A2%1E%80~%0E%3E%DA%10x%5D%95Uig%15u%15%ED%7C%14%B6%87%A1%3B%FCo8%A8%D8o%D3%ADO%01%EDx%83%1A~%1B%9FpP%A3%DC%C6'%9C%95gK%00%00%00%00%00%00%00%00%00%20%D9%C9%11%D0%C0%40%AF%3F%EE%EE%92%94%D6%16X%B5%BCMH%15%2F%BF%D4%A7%C87%F1%8E%F2%81%AE%AAvzr%DA2%ABV%17%7C%E63%83%E7I%DC%C6%0Bs%1B%EF6%1E%00%00%00%00%00%00%00%00%00%80cr%9CW%FF%7F%C6%01%0E%F1%CE%A5%84%B3%CA%BC%E0%CB%AA%84%CE%F9%BF)%EC%13%08WU%AE%AB%B1%AE%2BO%EC%8E%CBYe%FE%8CN%ABr%5Dy%60~%CFA%0D%F4%AE%D4%BE%C75%CA%EDVB%EA(%B7%F1%09g%E5%D9%12%00%00%00%00%00%00%00%00%00H%F6%EB%13S%E7y%5E%5E%FB%98%F0%22%D1%B2'%A7%F0%92%B1%BC%24z3%AC%7Dm%60%D5%92%B4%7CEUO%5E%F0%AA*%3BU%B9%AE%3E%A0j%94%07%A0%C7%A0%AB%FD%B5%3F%A0%F7%03T%3Dy%D7%F7%D6%D4%C0%AAU%D2%E6%DFt%3F%A8%CC%AA%F2%86%B9%D7%F5%1F%18%E6%01%F8%CC%D5%9E%F0%F3z%88%AA%90%EF%20%00%00%00%00%00%00%00%00%00%C0%A6%D3%EA%CFi%AFb%2C%7BB%0A%2B%C3%1A%D7%06V%D5%07%A8r%5D%3D%D9%A6%CAu%F5%25%CF%A2%99%97zNX%60%95%AB%5DUZ%D5%FBR%03%AB%1C%D4k%9F%3F%BB%5C%FF%81a%AE%AB'%7F%F3%EA%FE%F3z%94%AA%D8%DF%5B%01%00%00%00%00%00%00%00%00%00%8E%FB%F3%F2%B1%1B%8DWU%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*UiU%C7%BBe%E7%F3%B9%CB%AAJ%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5*%AAj%FD%C6%D4%5Eo%90%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5%86%AF%1B%9F%98%DA%EBm%BBV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%AD%D6%E4%F58%01%00%00%00%00%00%00%00%00%00%00%00%00%00%40%85%7F%02%0C%008%C2%D0H%16j%8FX%00%00%00%00IEND%AEB%60%82") repeat-x !important;
-    border-top: 1px solid #BBBBBB !important;
-    border-right: 1px dashed #BBBBBB !important;
-    border-bottom: 1px solid #000000 !important;
-}
-
-.firebugRulerV {
-    top: 0 !important;
-    left: -15px !important;
-    width: 14px !important;
-    height: 100% !important;
-    background: url("data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%00%0E%00%00%13%88%08%02%00%00%00%0E%F5%CB%10%00%00%00%04gAMA%00%00%D6%D8%D4OX2%00%00%00%19tEXtSoftware%00Adobe%20ImageReadyq%C9e%3C%00%00%06~IDATx%DA%EC%DD%D1v%A20%14%40Qt%F1%FF%FF%E4%97%D9%07%3BT%19%92%DC%40(%90%EEy%9A5%CB%B6%E8%F6%9Ac%A4%CC0%84%FF%DC%9E%CF%E7%E3%F1%88%DE4%F8%5D%C7%9F%2F%BA%DD%5E%7FI%7D%F18%DDn%BA%C5%FB%DF%97%BFk%F2%10%FF%FD%B4%F2M%A7%FB%FD%FD%B3%22%07p%8F%3F%AE%E3%F4S%8A%8F%40%EEq%9D%BE8D%F0%0EY%A1Uq%B7%EA%1F%81%88V%E8X%3F%B4%CEy%B7h%D1%A2E%EBohU%FC%D9%AF2fO%8BBeD%BE%F7X%0C%97%A4%D6b7%2Ck%A5%12%E3%9B%60v%B7r%C7%1AI%8C%BD%2B%23r%00c0%B2v%9B%AD%CA%26%0C%1Ek%05A%FD%93%D0%2B%A1u%8B%16-%95q%5Ce%DCSO%8E%E4M%23%8B%F7%C2%FE%40%BB%BD%8C%FC%8A%B5V%EBu%40%F9%3B%A72%FA%AE%8C%D4%01%CC%B5%DA%13%9CB%AB%E2I%18%24%B0n%A9%0CZ*Ce%9C%A22%8E%D8NJ%1E%EB%FF%8F%AE%CAP%19*%C3%BAEKe%AC%D1%AAX%8C*%DEH%8F%C5W%A1e%AD%D4%B7%5C%5B%19%C5%DB%0D%EF%9F%19%1D%7B%5E%86%BD%0C%95%A12%AC%5B*%83%96%CAP%19%F62T%86%CAP%19*%83%96%CA%B8Xe%BC%FE)T%19%A1%17xg%7F%DA%CBP%19*%C3%BA%A52T%86%CAP%19%F62T%86%CA%B0n%A9%0CZ%1DV%C6%3D%F3%FCH%DE%B4%B8~%7F%5CZc%F1%D6%1F%AF%84%F9%0F6%E6%EBVt9%0E~%BEr%AF%23%B0%97%A12T%86%CAP%19%B4T%86%CA%B8Re%D8%CBP%19*%C3%BA%A52huX%19%AE%CA%E5%BC%0C%7B%19*CeX%B7h%A9%0C%95%E1%BC%0C%7B%19*CeX%B7T%06%AD%CB%5E%95%2B%BF.%8F%C5%97%D5%E4%7B%EE%82%D6%FB%CF-%9C%FD%B9%CF%3By%7B%19%F62T%86%CA%B0n%D1R%19*%A3%D3%CA%B0%97%A12T%86uKe%D0%EA%B02*%3F1%99%5DB%2B%A4%B5%F8%3A%7C%BA%2B%8Co%7D%5C%EDe%A8%0C%95a%DDR%19%B4T%C66%82fA%B2%ED%DA%9FC%FC%17GZ%06%C9%E1%B3%E5%2C%1A%9FoiB%EB%96%CA%A0%D5qe4%7B%7D%FD%85%F7%5B%ED_%E0s%07%F0k%951%ECr%0D%B5C%D7-g%D1%A8%0C%EB%96%CA%A0%A52T%C6)*%C3%5E%86%CAP%19%D6-%95A%EB*%95q%F8%BB%E3%F9%AB%F6%E21%ACZ%B7%22%B7%9B%3F%02%85%CB%A2%5B%B7%BA%5E%B7%9C%97%E1%BC%0C%EB%16-%95%A12z%AC%0C%BFc%A22T%86uKe%D0%EA%B02V%DD%AD%8A%2B%8CWhe%5E%AF%CF%F5%3B%26%CE%CBh%5C%19%CE%CB%B0%F3%A4%095%A1%CAP%19*Ce%A8%0C%3BO*Ce%A8%0C%95%A12%3A%AD%8C%0A%82%7B%F0v%1F%2FD%A9%5B%9F%EE%EA%26%AF%03%CA%DF9%7B%19*Ce%A8%0C%95%A12T%86%CA%B8Ze%D8%CBP%19*Ce%A8%0C%95%D1ae%EC%F7%89I%E1%B4%D7M%D7P%8BjU%5C%BB%3E%F2%20%D8%CBP%19*Ce%A8%0C%95%A12T%C6%D5*%C3%5E%86%CAP%19*Ce%B4O%07%7B%F0W%7Bw%1C%7C%1A%8C%B3%3B%D1%EE%AA%5C%D6-%EBV%83%80%5E%D0%CA%10%5CU%2BD%E07YU%86%CAP%19*%E3%9A%95%91%D9%A0%C8%AD%5B%EDv%9E%82%FFKOee%E4%8FUe%A8%0C%95%A12T%C6%1F%A9%8C%C8%3D%5B%A5%15%FD%14%22r%E7B%9F%17l%F8%BF%ED%EAf%2B%7F%CF%ECe%D8%CBP%19*Ce%A8%0C%95%E1%93~%7B%19%F62T%86%CAP%19*Ce%A8%0C%E7%13%DA%CBP%19*Ce%A8%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4h%A9%0C%B3E%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4h%A9%0C%B3E%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4%AE%A4%F5%25%C0%00%DE%BF%5C'%0F%DA%B8q%00%00%00%00IEND%AEB%60%82") repeat-y !important;
-    border-left: 1px solid #BBBBBB !important;
-    border-right: 1px solid #000000 !important;
-    border-bottom: 1px dashed #BBBBBB !important;
-}
-
-.overflowRulerX > .firebugRulerV {
-    left: 0 !important;
-}
-
-.overflowRulerY > .firebugRulerH {
-    top: 0 !important;
-}
-
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-.fbProxyElement {
-    position: fixed !important;
-    pointer-events: auto !important;
-}
-</style>
+<link href="css/edit/base.css" rel="stylesheet" type="text/css">
 </head>
-<body>
-	
+<body class="mpadbook">
+	<!-- ========================================================== -->
+	<div id="toptoolbar-wrapper">
+    <div id="toptoolbar">
+        <div class="shopbox-toptoolbar">
+            <div class="faq">
+                <a href="/tushuWeb/login/loginOut.html">注销</a>
+            </div>
+
+        </div>
+        <!-- end of top toolbar -->
+        <div class="nickname-toptoolbar">
+            <a href="###">欢迎你：123@163.com</a>
+        </div>
+    </div>
+	</div>
+	<!-- ========================================================== -->
+	<div id="outwrap">
+        <!--begin 顶部logo和工具栏 -->
+        <div id="logo_tools_bar">
+            <a href="/"><span id="logo"></span></a>
+            <span id="works_title" class="works_title"></span>
+            <div id="tools_bar">
+
+                &nbsp;&nbsp;<a href="#" id="btn_preview" class="btn" title="预览">预览</a>
+                <a href="#" id="btn_save" class="btn" title="保存&amp;加入购物车" onclick="addToShoppingCart(1)">保存</a>
+                <a href="#" id="btn_setting" class="btn btn4" title="书本设置">页数设置</a>
+                <a href="#" id="btn_print" class="btn btn_reg_green" title="印刷">印刷</a>
+            </div>
+        </div>
+        <!--end -->
+        <div id="inwrap">
+            <!--顶部边框 -->
+            <div id="inwrap_pre"></div>
+            <!--begin 编辑区域 -->
+            <div style="padding: 30px 0px;" class="sections">
+                <!--begin 上传和图像缩略图 -->
+                <div id="section_upload_thumnail" class="section">
+                    <a id="btn_upload" class="btn" title="上传照片"></a>
+                    <div id="mod_thumbnail" class="pic_theme_list">
+                        <a id="mod_thumbnail_btn_prev" class="arrow_lf btn_arrow btn lf"></a>
+                        <div class="thumbnail_warp customer_scrollbar">
+                            <ul style="left: 0px; width: 430px;" id="mod_thumbnail_list" class="thumbnail lf">            
+                            	<li class="">                
+	                            	<img class="j_thumbnail ui-draggable" title="点击查看大图" id="imageid_2375559" data-imageid="2375559" data-path="imagedata/691/91/103691/169391/103691_20131025092029678" data-original_height="335" data-original_width="230" src="images/edit/imagedata/103691_20131025092029678_thumb.jpg" data-url="/imagedata/691/91/103691/169391/103691_20131025092029678" used_num="0">                
+	                            	<span class="counter" id="counter_2375559" title="图像被使用次数">0</span>
+	                            	<span class="thumbnail_operats">
+	                            	<a title="旋转" href="javascript:;" class="btn_rotate_left" data-imageid="2375559"></a>
+	                            	<a title="旋转" href="javascript:;" class="btn_rotate_right" data-imageid="2375559"></a>
+	                            	<a title="删除" href="javascript:;" class="btn_delete" data-imageid="2375559"></a>
+	                            	</span>            
+                            	</li>
+                            	<li class="">                
+                            		<img class="j_thumbnail ui-draggable" title="点击查看大图" id="imageid_2375558" data-imageid="2375558" data-path="imagedata/691/91/103691/169391/103691_20131025092028875" data-original_height="257" data-original_width="230" src="images/edit/imagedata/103691_20131025092028875_thumb.jpg" data-url="/imagedata/691/91/103691/169391/103691_20131025092028875" used_num="0">                
+                            		<span class="counter" id="counter_2375558" title="图像被使用次数">0</span>
+                            		<span class="thumbnail_operats">
+                            		<a title="旋转" href="javascript:;" class="btn_rotate_left" data-imageid="2375558"></a>
+                            		<a title="旋转" href="javascript:;" class="btn_rotate_right" data-imageid="2375558"></a>
+                            		<a title="删除" href="javascript:;" class="btn_delete" data-imageid="2375558"></a>
+                            		</span>            
+                            	</li>
+                            	<li class="">                
+                            		<img class="j_thumbnail ui-draggable" title="点击查看大图" id="imageid_2375557" data-imageid="2375557" data-path="images/imagedata/103691_20131025092028027" data-original_height="287" data-original_width="287" src="images/edit/imagedata/103691_20131025092028027_thumb.jpg" data-url="images/edit/imagedata/103691_20131025092028027" used_num="0">                
+                            		<span class="counter" id="counter_2375557" title="图像被使用次数">0</span>
+                            		<span class="thumbnail_operats"><a title="旋转" href="javascript:;" class="btn_rotate_left" data-imageid="2375557"></a>
+                            		<a title="旋转" href="javascript:;" class="btn_rotate_right" data-imageid="2375557"></a>
+                            		<a title="删除" href="javascript:;" class="btn_delete" data-imageid="2375557"></a>
+                            		</span>            
+                            	</li>
+                            	<li class="">                
+                            		<img class="j_thumbnail ui-draggable" title="点击查看大图" id="imageid_2375556" data-imageid="2375556" data-path="imagedata/691/91/103691/169391/103691_20131025092026465" data-original_height="211" data-original_width="230" src="images/edit/imagedata/103691_20131025092026465_thumb.jpg" data-url="/imagedata/691/91/103691/169391/103691_20131025092026465" used_num="0">                
+                            		<span class="counter" id="counter_2375556" title="图像被使用次数">0</span>
+                            		<span class="thumbnail_operats"><a title="旋转" href="javascript:;" class="btn_rotate_left" data-imageid="2375556"></a>
+                            		<a title="旋转" href="javascript:;" class="btn_rotate_right" data-imageid="2375556"></a>
+                            		<a title="删除" href="javascript:;" class="btn_delete" data-imageid="2375556"></a>
+                            		</span>            
+                            	</li>
+                            	<li class="">                
+                            		<img class="j_thumbnail ui-draggable" title="点击查看大图" id="imageid_2375555" data-imageid="2375555" data-path="imagedata/691/91/103691/169391/103691_20131025092025685" data-original_height="306" data-original_width="230" src="images/edit/imagedata/103691_20131025092025685_thumb.jpg" data-url="/imagedata/691/91/103691/169391/103691_20131025092025685" used_num="0">                
+                            		<span class="counter" id="counter_2375555" title="图像被使用次数">0</span>
+                            		<span class="thumbnail_operats">
+                            		<a title="旋转" href="javascript:;" class="btn_rotate_left" data-imageid="2375555"></a>
+                            		<a title="旋转" href="javascript:;" class="btn_rotate_right" data-imageid="2375555"></a>
+                            		<a title="删除" href="javascript:;" class="btn_delete" data-imageid="2375555"></a>
+                            		</span>            
+                            	</li>
+                            </ul>
+                        </div>
+                        <a id="mod_thumbnail_btn_next" class="arrow_rt btn btn_arrow lf"></a>
+                    </div>
+                </div>
+                <!--end -->
+
+                <div id="section_thumnail_info" class="section section_thumnail_info">
+                    <span class="upload_bar_holder" id="upload_bar_holder" style="display: none">
+                        <span class="name">已上传<em class="img_page" id="upload_totalPage">5</em>张  进度(<em id="bar_percent">100</em>%)：</span>
+                        <span class="bar_outer" id="bar_outer">
+                            <span style="width: 200px;" class="bar" id="upload_curr_bar"></span>
+                        </span>
+                    </span>
+                    <span>共 <b id="thumbnail_count">0</b> 张，已使用 <b id="thumbnail_used_count">0</b> 张&nbsp;&nbsp;<label><input type="checkbox" id="chk_hide_used">隐藏已使用的照片</label>
+                    </span><span class="thumbnail_order">排序方式：<a href="#" class="cur" action="filename">按文件名</a><a href="#" action="phototime">按拍照时间</a><a href="#" action="uploadtime">按上传时间</a></span>
+                </div>
+
+                <!--begin 版式自定义编辑 -->
+                <div id="section_layout_edit" class="edit_spine">
+                    <div id="edit_area_warp" class="edit_area_warp edit_area_warp_right">
+                        <div id="spine" class="spine" num="spine">
+                            <div align="left" contenteditable="true" class="text_box txt1" id="spine_txt1" name="txt1" x="79" y="18" width="4" height="180" space="0" leading="9.6" max_line="1" max_length="25" pt="8" px="6" direction="vertical" style="left: 8px; top: 10px; width: 10px; height: 204px; font-size: 7px; letter-spacing: 4px;" tips_info="在此输入作品主标题">在此输入作品主标题</div>
+                            <div align="left" contenteditable="true" class="text_box txt2" id="spine_txt2" name="txt1" x="79" y="18" width="4" height="180" space="0" leading="9.6" max_line="1" max_length="14" pt="8" px="6" direction="vertical" style="left: 8px; top: 227px; width: 10px; height: 112px; font-size: 7px; letter-spacing: 4px;" tips_info="在此输入作者信息">在此输入作者信息</div>
+                        </div>
+                        <div class="backbone_bg"></div>
+                        <div class="pagelayout_left_side_warp">
+                            <div id="pagelayout_left_side_edit" class="pagelayout_edit" background_color="#ffffff" color="#000000" style="background-color: rgb(255, 255, 255);"><div class="trim_line_top"></div><div class="trim_line_left"></div><div class="trim_line_bottom"></div><div class="trim_line_right"></div><div style="left: 181px; top: 309px; width: 93px; height: 21px;position: absolute;" height="9.5" width="42" y="113" x="15.5" name="img1" class="img1 "><img width="110" class="ui-draggable" style="position: relative; left: 0px; top: 0px;" src="/styles/images/edit/m_logo_b.png" id="bottom_img1"></div></div>
+                        </div>
+                        <div class="pagelayout_right_side_warp" style="display: block;">
+                            <div color="#000000" background_color="#ffffff" id="pagelayout_right_side_edit" class="pagelayout_edit pageedit_cover" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); width: 480px; height: 624px;" has_edited="false" num="cover" name="C1" width="197" height="256" page_type="C" product_type="MPAD" space_type="B" margin_type="A" side_type="M" cross_type="O"><div class="trim_line_top"></div><div class="trim_line_left"></div><div class="trim_line_bottom"></div><div class="trim_line_right"></div><div class="image_box img1 ui-droppable" id="img1" name="img1" x="3" y="0" width="191" height="256" style="left: 7px; top: 0px; width: 466px; height: 624px;"><div class="drag_here"></div><div class="dpi_info">1880x2520</div></div><div align="left" class="text_box text_box_background txt1" id="txt1" name="txt1" x="21" y="18" width="160" height="8.467" space="28.8" leading="0" max_line="1" max_length="15" pt="24" px="18" direction="horizontal" style="left: 51px; top: 44px; width: 390px; height: 21px; font-size: 18px;">在此输入文字~</div><div align="left" class="text_box text_box_background txt2" id="txt2" name="txt2" x="21" y="33" width="160" height="6" space="12" leading="0" max_line="1" max_length="34" pt="12" px="8" direction="horizontal" style="left: 51px; top: 80px; width: 390px; height: 15px; font-size: 9px;">在此输入文字~</div><div align="left" class="text_box text_box_background txt3" id="txt3" name="txt3" x="21" y="39" width="50" height="6" space="0" leading="0" max_line="1" max_length="10" pt="12" px="8" direction="horizontal" style="left: 51px; top: 95px; width: 122px; height: 15px; font-size: 9px;">在此输入文字~</div></div>
+                        </div>
+                        <div class="layout_tools">
+                            <ul class="tool_bot">
+                                <li class="lf left_btn">
+                                    <a href="javascript:;" id="background_color_picker_btn" class="editor_bg"><span>底色</span><i></i></a>
+                                    <a href="#" id="text_color_picker_btn" class="editor_color"><span>文字颜色</span><i></i></a>
+                                </li>
+                                <li class="rt right_btn">
+                                    <a href="#" id="pagelayout_picker_btn" class="editor_format"><span>&nbsp;</span><i></i></a>
+                                </li>
+                            </ul>
+                            <ul id="background_color_bar" class="color_bar" style="display: none;">
+                                <li class="white_bg color_page" data-color="#ffffff" title="白色"></li>
+                                <li class="black_bg color_page" data-color="#000000" title="黑色"></li>
+                                <li class="yanghong_bg" data-color="#EF006B" title="洋红"></li>
+                                <li class="qing_bg" data-color="#009FE0" title="青色"></li>
+                                <li class="ningmeng_bg" data-color="#FFC400" title="柠檬"></li>
+                                <li class="juzi_bg" data-color="#F98C00" title="橘子"></li>
+                                <li class="dahong_bg" data-color="#DF0000" title="大红"></li>
+                                <li class="caodi_bg" data-color="#93BC00" title="草地"></li>
+                                <li class="naicha_bg" data-color="#C2891B" title="奶茶"></li>
+                                <li class="kafei_bg" data-color="#77420D" title="咖啡"></li>
+                                <li class="yingtao_bg" data-color="#B90000" title="樱桃"></li>
+                                <li class="senlin_bg" data-color="#175724" title="森林"></li>
+                                <li class="nuanhui_bg" data-color="#CABCAB" title="暖灰"></li>
+                                <li class="lenghui_bg" data-color="#A8BCC2" title="冷灰"></li>
+                                <li class="yanzhi_bg" data-color="#FABBAB" title="胭脂"></li>
+                                <li class="wuye_bg" data-color="#6688A4" title="午夜"></li>
+                                <li class="xiangya_bg" data-color="#F8F2E5" title="象牙"></li>
+                                <li class="mise_bg" data-color="#E4DED6" title="米色"></li>
+                                <li class="fenhong_bg" data-color="#F9DBDA" title="粉红"></li>
+                                <li class="fenlan_bg" data-color="#D6E9F2" title="粉蓝"></li>
+                                <li class="naihuang_bg" data-color="#FFEA9D" title="奶黄"></li>
+                                <li class="youzi_bg" data-color="#FCDBAA" title="柚子"></li>
+                                <li class="taohong_bg" data-color="#FBE6D4" title="桃红"></li>
+                                <li class="suancheng_bg" data-color="#D2DCA0" title="酸橙"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--end版式自定义编辑 -->
+            </div>
+            <!--end 编辑区域 -->
+
+            <div id="mod_tools" class="sections mod_tools">
+                <div class="section">
+                    <span class="btn_area">工具栏：
+                        <a id="btn_page_manager" class="btn_round_mid btn" title="管理页面顺序">页面管理</a>                    
+                    </span>
+
+                    <div id="page_count" class="page_controll" style="display: none;">
+                        <a href="#" id="btn_add_page" class="add">&nbsp;
+                        </a>
+                        <a href="#" id="btn_minus_page" class="minus">&nbsp;
+                        </a>
+                        &nbsp;&nbsp;<span>加减页数</span>
+                    </div>
+                    <span class="page_info">已完成&nbsp;<span id="complete_count">0</span>P，可编辑&nbsp;<span id="edit_count">33</span>P，总共&nbsp;<span id="total_count">36</span>P&nbsp;</span>
+                </div>
+            </div>
+
+            <!-- begin 页面预览 -->
+            <div id="mod_preview_thumnail" class="inwrap_aft gray_wrap_aft">
+                <div id="layout_theme">
+                    <a id="mod_preview_thumnail_btn_pre" class="arrow_retangle_lf btn lf"></a>
+                    <div class="preview_thumbnail">
+                        <ul id="mod_preview_thumnail_list" class="blk" style="left: 0px;">  
+                              
+                        	<li index="0" class="active">            
+                        		<a page_type="none" page_side="left" num="bottom" href="javascript:;" id="page_bottom" class="pagelayout_bg blank" style="background-color: rgb(255, 255, 255);"></a>             
+                        		<em class="img_page">封底</em>
+								<a template_name="C1" page_type="COVER" page_side="right" num="cover" href="javascript:;" id="page_cover" class="pagelayout_bg pc1_r"></a>            
+								<em class="img_page_right">封面</em>        
+							</li>
+							
+							<li index="1" class="">            
+								<a _template_name="AUTHORINFO" page_side="left" num="0left" href="javascript:;" id="page_0left" class="pagelayout_bg blank"></a>            
+								<em class="img_page">封面折页</em>            
+								<a template_name="T1" page_side="right" num="0" href="javascript:;" id="page_0" class="pagelayout_bg pt1_r"></a>
+								<em class="img_page_right">扉页</em>        
+							</li>        
+							
+							<li index="2" class="">            
+								<a page_side="left" num="1_left" href="javascript:;" id="page_1_left" class="pagelayout_bg blank"></a>
+								<em class="img_page">扉页对页</em>            
+								<a template_name="T8" page_side="right" num="1" href="javascript:;" id="page_1" class="pagelayout_bg pt8_r"></a>
+								<em class="img_page_right">1</em>        
+							</li>                
+							
+							<li index="3" class="cross_li">                    
+								<a template_name="T215" page_side="left" num="2" href="javascript:;" id="page_2" class="pagelayout_bg pt8_l"></a>
+								<em class="img_page">2</em>                    
+								<a template_name="T11" page_side="right" num="3" href="javascript:;" id="page_3" class="pagelayout_bg pt11_r" style="display: none;"></a>
+								<em class="img_page_right">3</em>                
+							</li>                
+							
+							<li index="4" class="">                    
+								<a template_name="T5" page_side="left" num="4" href="javascript:;" id="page_4" class="pagelayout_bg pt5_l">                                            </a>                    <em class="img_page">4</em>                    <a template_name="T5" page_side="right" num="5" href="javascript:;" id="page_5" class="pagelayout_bg pt5_r">                                            </a>                    <em class="img_page_right">5</em>                </li>                <li index="5" class="">                    <a template_name="T17" page_side="left" num="6" href="javascript:;" id="page_6" class="pagelayout_bg pt17_l">                                            </a>                    <em class="img_page">6</em>                    <a template_name="T20" page_side="right" num="7" href="javascript:;" id="page_7" class="pagelayout_bg pt20_r">                                            </a>                    <em class="img_page_right">7</em>                </li>                <li index="6" class="">                    <a template_name="T20" page_side="left" num="8" href="javascript:;" id="page_8" class="pagelayout_bg pt20_l">                                            </a>                    <em class="img_page">8</em>                    <a template_name="T13" page_side="right" num="9" href="javascript:;" id="page_9" class="pagelayout_bg pt13_r">                                            </a>                    <em class="img_page_right">9</em>                </li>                <li index="7" class="">                    <a template_name="T6" page_side="left" num="10" href="javascript:;" id="page_10" class="pagelayout_bg pt6_l">                                            </a>                    <em class="img_page">10</em>                    <a template_name="T9" page_side="right" num="11" href="javascript:;" id="page_11" class="pagelayout_bg pt9_r">                                            </a>                    <em class="img_page_right">11</em>                </li>                <li index="8" class="">                    <a template_name="T9" page_side="left" num="12" href="javascript:;" id="page_12" class="pagelayout_bg pt9_l">                                            </a>                    <em class="img_page">12</em>                    <a template_name="T3" page_side="right" num="13" href="javascript:;" id="page_13" class="pagelayout_bg pt3_r">                                            </a>                    <em class="img_page_right">13</em>                </li>                <li index="9" class="">                    <a template_name="T6" page_side="left" num="14" href="javascript:;" id="page_14" class="pagelayout_bg pt6_l">                                            </a>                    <em class="img_page">14</em>                    <a template_name="T6" page_side="right" num="15" href="javascript:;" id="page_15" class="pagelayout_bg pt6_r">                                            </a>                    <em class="img_page_right">15</em>                </li>                <li index="10" class="">                    <a template_name="T18" page_side="left" num="16" href="javascript:;" id="page_16" class="pagelayout_bg pt18_l">                                            </a>                    <em class="img_page">16</em>                    <a template_name="T11" page_side="right" num="17" href="javascript:;" id="page_17" class="pagelayout_bg pt11_r">                                            </a>                    <em class="img_page_right">17</em>                </li>                <li index="11" class="">                    <a template_name="T11" page_side="left" num="18" href="javascript:;" id="page_18" class="pagelayout_bg pt11_l">                                            </a>                    <em class="img_page">18</em>                    <a template_name="T14" page_side="right" num="19" href="javascript:;" id="page_19" class="pagelayout_bg pt14_r">                                            </a>                    <em class="img_page_right">19</em>                </li>                <li index="12" class="">                    <a template_name="T7" page_side="left" num="20" href="javascript:;" id="page_20" class="pagelayout_bg pt7_l">                                            </a>                    <em class="img_page">20</em>                    <a template_name="T7" page_side="right" num="21" href="javascript:;" id="page_21" class="pagelayout_bg pt7_r">                                            </a>                    <em class="img_page_right">21</em>                </li>                <li index="13" class="">                    <a template_name="T20" page_side="left" num="22" href="javascript:;" id="page_22" class="pagelayout_bg pt20_l">                                            </a>                    <em class="img_page">22</em>                    <a template_name="T4" page_side="right" num="23" href="javascript:;" id="page_23" class="pagelayout_bg pt4_r">                                            </a>                    <em class="img_page_right">23</em>                </li>                <li index="14" class="">                    <a template_name="T4" page_side="left" num="24" href="javascript:;" id="page_24" class="pagelayout_bg pt4_l">                                            </a>                    <em class="img_page">24</em>                    <a template_name="T16" page_side="right" num="25" href="javascript:;" id="page_25" class="pagelayout_bg pt16_r">                                            </a>                    <em class="img_page_right">25</em>                </li>                <li index="15" class="">                    <a template_name="T19" page_side="left" num="26" href="javascript:;" id="page_26" class="pagelayout_bg pt19_l">                                            </a>                    <em class="img_page">26</em>                    <a template_name="T12" page_side="right" num="27" href="javascript:;" id="page_27" class="pagelayout_bg pt12_r">                                            </a>                    <em class="img_page_right">27</em>                </li>                <li index="16" class="">                    <a template_name="T12" page_side="left" num="28" href="javascript:;" id="page_28" class="pagelayout_bg pt12_l">                                            </a>                    <em class="img_page">28</em>                    <a template_name="T5" page_side="right" num="29" href="javascript:;" id="page_29" class="pagelayout_bg pt5_r">                                            </a>                    <em class="img_page_right">29</em>                </li>                <li index="17" class="">                    <a template_name="T8" page_side="left" num="30" href="javascript:;" id="page_30" class="pagelayout_bg pt8_l">                                            </a>                    <em class="img_page">30</em>                    <a template_name="T8" page_side="right" num="31" href="javascript:;" id="page_31" class="pagelayout_bg pt8_r">                                            </a>                    <em class="img_page_right">31</em>                </li>                <li index="18" class="">                    <a template_name="T2" page_side="left" num="32" href="javascript:;" id="page_32" class="pagelayout_bg pt2_l">                                            </a>                    <em class="img_page">32</em>                    <a data-side="right" num="last" href="javascript:;" id="page_blank" class="pagelayout_bg blank">                    </a>                    <em class="img_page_right"></em>                </li>                <li index="19">                    <a template_name="COPYRIGHT" page_side="left" num="copyright" href="javascript:;" id="page_copyright" class="pagelayout_bg pcopyright">                                            </a>                    <em class="img_page">版权</em>                    <a data-side="right" num="last_bottom" href="javascript:;" id="page_blank" class="pagelayout_bg blank">                    </a>                    <em class="img_page_right">封底</em>                </li></ul>
+                    </div>
+                    <a id="mod_preview_thumnail_btn_next" class="arrow_retangle_rt btn_arrow btn lf"></a>
+                </div>
+            </div>
+            <!-- end -->
+        </div>
+        <div id="bot"></div>
+        
+        <!--缩略图预览-->
+        <div id="thumbnail_big" class="thumbnail_big" style="display: none;">
+            <div class="thumbnail_big_bd">
+                <a class="close" href="#"></a>
+                <img>
+                <div class="block"></div>
+                <div class="info">ddd.jpg 1800*900px</div>
+            </div>
+        </div>
+        
+        <!--文本编辑-->
+        <div id="text_editor" class="text_editor" style="display: none;">
+            <h2>您最多可以输入<span id="text_count">30</span>个字符</h2>
+            <ul>
+                <li>
+                    <button id="text_align_left_btn">左对齐</button></li>
+                <li>
+                    <button id="text_align_center_btn">居中</button></li>
+                <li>
+                    <button id="text_align_right_btn">右对齐</button></li>
+            </ul>
+            <textarea id="text_area" rows="1" cols="1"></textarea>
+            <ul>
+                <li>
+                    <button class="confirm">确定</button></li>
+                <li>
+                    <button class="cancel">取消</button></li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
