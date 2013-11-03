@@ -1,0 +1,448 @@
+﻿body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../服务说明_files/u0_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:100px;
+    top:263px;
+    width:814px;
+    height:633px;
+}
+
+#u0_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:820px;
+    height:639px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:308px;
+    width:810px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2_normal {
+    background-image: url('../Foot1_files/u27_normal.png');
+}
+
+.u2_container {
+    position:absolute;
+    left:100px;
+    top:906px;
+    width:814px;
+    height:39px;
+}
+
+#u2_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:820px;
+    height:45px;
+}
+
+.u3 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:810px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u4_normal {
+    background-image: url('../Foot1_files/u29_normal.png');
+}
+
+.u4_container {
+    position:absolute;
+    left:119px;
+    top:915px;
+    width:79px;
+    height:20px;
+}
+
+#u4_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:85px;
+    height:26px;
+}
+
+.u5 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:75px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u6_normal {
+    background-image: url('../Foot1_files/u29_normal.png');
+}
+
+.u6_container {
+    position:absolute;
+    left:208px;
+    top:915px;
+    width:79px;
+    height:20px;
+}
+
+#u6_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:85px;
+    height:26px;
+}
+
+.u7 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:75px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u9 {
+    position:absolute;
+    left:131px;
+    top:281px;
+    width:730px;
+    height:352px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u10_normal {
+    background-image: url('../Header1_files/u21_normal.png');
+}
+
+.u10_container {
+    position:absolute;
+    left:100px;
+    top:110px;
+    width:814px;
+    height:55px;
+}
+
+#u10_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:820px;
+    height:61px;
+}
+
+.u11 {
+    position:absolute;
+    left:2px;
+    top:20px;
+    width:810px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u12_normal {
+    background-image: url('../Header1_files/u23_normal.png');
+}
+
+.u12_container {
+    position:absolute;
+    left:100px;
+    top:50px;
+    width:814px;
+    height:47px;
+}
+
+#u12_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:820px;
+    height:53px;
+}
+
+.u13 {
+    position:absolute;
+    left:2px;
+    top:16px;
+    width:810px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u14 {
+    position:absolute;
+    left:120px;
+    top:130px;
+    width:60px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u16_normal {
+    background-image: url('../服务说明_files/u16_normal.png');
+}
+
+.u16_container {
+    position:absolute;
+    left:357px;
+    top:59px;
+    width:118px;
+    height:33px;
+}
+
+#u16_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:118px;
+    height:33px;
+}
+
+.u17 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:114px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u18 {
+    position:absolute;
+    left:504px;
+    top:71px;
+    width:36px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u19 {
+    position:absolute;
+    left:790px;
+    top:72px;
+    width:59px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u20 {
+    position:absolute;
+    left:705px;
+    top:72px;
+    width:64px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u21_normal {
+    background-image: url('../服务说明_files/u21_normal.png');
+}
+
+.u21_container {
+    position:absolute;
+    left:100px;
+    top:180px;
+    width:260px;
+    height:67px;
+}
+
+#u21_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:266px;
+    height:73px;
+}
+
+.u22 {
+    position:absolute;
+    left:2px;
+    top:26px;
+    width:256px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u23_normal {
+    background-image: url('../服务说明_files/u23_normal.png');
+}
+
+.u23_container {
+    position:absolute;
+    left:360px;
+    top:180px;
+    width:290px;
+    height:67px;
+}
+
+#u23_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:296px;
+    height:73px;
+}
+
+.u24 {
+    position:absolute;
+    left:2px;
+    top:26px;
+    width:286px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u25_normal {
+    background-image: url('../服务说明_files/u25_normal.png');
+}
+
+.u25_container {
+    position:absolute;
+    left:650px;
+    top:180px;
+    width:264px;
+    height:67px;
+}
+
+#u25_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:270px;
+    height:73px;
+}
+
+.u26 {
+    position:absolute;
+    left:2px;
+    top:26px;
+    width:260px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u27 {
+    position:absolute;
+    left:170px;
+    top:71px;
+    width:152px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
