@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="gb2312">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>pikaday轻量级日期选择插件 - 站长素材</title>
+    <link rel="stylesheet" href="css/pikaday.css">
+    <link rel="stylesheet" href="css/site.css">
+</head>
+
+    <label for="datepicker">Date:</label>
+    <br>
+    <input type="text" id="datepicker">
+
+    <script src="js/pikaday.js"></script>
+    <script>
+
+    var picker = new Pikaday(
+    {
+        field: document.getElementById('datepicker'),
+        firstDay: 1,
+        minDate: new Date('2000-01-01'),
+        maxDate: new Date('2020-12-31'),
+        yearRange: [2000,2020]
+    });
+
+    </script>
+	<div style="text-align:center;clear:both">
+<p>适用浏览器：IE8、360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗.</p>
+<p>来源：<a href="http://sc.chinaz.com/" target="_blank">站长素材</a></p>
+</div>
+</body>
+</html>

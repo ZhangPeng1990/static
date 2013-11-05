@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>jQuery图片tooltip提示 - 站长素材</title>
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<link rel='stylesheet' id='wp_dlmp_styles-css'  href='css/styles.css' type='text/css' media='all' />
+<script type="text/javascript" language="javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="js/jcarousellite_1.3.min.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery.toolsnew.min.js"></script>
+<script language="javascript" type="text/javascript">        
+            $(document).ready(function() {
+				$(".caruselList").jCarouselLite({
+					btnNext: ".next",
+					btnPrev: ".prev",
+					scroll: 1,
+					visible: 5,
+					speed: 600,
+					mouseWheel: false,
+					circular:false,
+					easing: "easeOutBack"
+				});
+				
+			
+				$(".tool-item").tooltip({ 
+					effect: 'slide',
+					offset: [0, 2],
+					onBeforeShow:	function(event, position) {
+						  				this.getTip().appendTo(document.body);
+										return true;}}					
+				).dynamic({ bottom: { direction: 'down', bounce: true } });
+
+            });
+</script>
+
+</head>
+<body>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- also like -->
+<div class="after_content">
+	<div class="container">
+    	
+        <div class="also-like-text">
+        	<h3>You might also like</h3>
+        </div>
+        
+        <div class="latest-list">
+            <div class="caruselList">
+                <ul>				
+										
+						<li>
+							<a href="http://sc.chinaz.com/" class="tool-item">
+							<img src="images/icon_connexus.png" alt="Responsive WordPress Theme" width="80" height="80" border="0" class="thumb" />
+							</a>
+							<span class="tooltip"><img src="images/conexus1.jpg"  height="225"  width="431"  alt="Conexus"  /></span> 
+						</li>
+										
+						<li>
+							<a href="http://sc.chinaz.com/" class="tool-item">
+							<img src="images/MetroVibes_v1_160x160.png" alt="Metro WordPress Theme" width="80" height="80" border="0" class="thumb" />
+							</a>
+							<span class="tooltip"><img src="images/MetroVibes_bigThmb_12.jpg"  height="225"  width="431"  alt="Metro Vibes"  /></span>
+						</li>
+										
+						<li>
+							<a href="http://sc.chinaz.com/" class="tool-item">
+								<span class="d20" title="-20%">-20%</span>
+								<img src="images/thumb_ExquisiteWorks.png" alt="Corporate WordPress Theme" width="80" height="80" border="0" class="thumb" />
+							</a>
+							<span class="tooltip"><img src="images/ExquisiteWorks_bigThmb_12.jpg"  height="225"  width="431"  alt="Exquisite Works"  /></span>
+						</li>
+										
+						<li>
+							<a href="http://sc.chinaz.com/" class="tool-item">
+								<span class="free" title="Free">Free</span>
+								<img src="images/Gadgetry_80x80.png" alt="Free WordPress Theme" width="80" height="80" border="0" class="thumb" />
+							</a>
+							<span class="tooltip"><img src="images/BigThmb_1.jpg"  height="225"  width="431"  alt="Gadgetry"  /></span>
+						</li>
+										
+						<li>
+							<a href="http://sc.chinaz.com/" class="tool-item">
+								<img src="images/newssetter.png" alt="News WordPress Theme" width="80" height="80" border="0" class="thumb" />
+							</a>
+							<span class="tooltip"><img src="images/BigThumb_1.jpg"  height="225"  width="431"  alt="Newssetter"  /></span>
+						</li>
+									</ul>
+            </div>
+        </div>
+        
+        <div class="clear"></div>
+    </div>
+        
+	</div>
+<div style="text-align:center;clear:both">
+<p>适用浏览器：IE8、360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗. </p>
+<p>来源：<a href="http://sc.chinaz.com/" target="_blank">站长素材</a></p>
+</div>
+</body>
+</html>

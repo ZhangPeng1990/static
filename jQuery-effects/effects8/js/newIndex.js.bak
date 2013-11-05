@@ -1,0 +1,11 @@
+$(function(){
+	//»ÃµÆÆ¬
+	$(".tabs").tabs(".images > div", {
+		effect: 'horizontal',//slide
+		fadeInSpeed: 700,
+		fadeOutSpeed: 700,
+		rotate: true,
+		autoplay : true,
+		interval:7000
+	}).slideshow();
+	$(".tabs").data('slideshow').play();

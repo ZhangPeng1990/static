@@ -1,0 +1,5 @@
+适用浏览器：IE8、360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗.
+
+
+日期选择插件
+jQuery pikaday简易日期选择插件，pikaday是一款基于jQuery的日期选择插件，插件非常简单，外观也还不错，是一款值得一试的日期选择插件。

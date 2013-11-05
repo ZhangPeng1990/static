@@ -1,0 +1,5 @@
+jQuery图标选项卡上下滑动切换
+
+适用浏览器：IE8、360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗.
+
+jQuery图标选项卡上下滑动切换，这是一款非常漂亮的jQuery选项卡Tab插件，选项卡Tab插件的特点是Tab选项卡有小图标，而且Tab切换时有滑动效果。

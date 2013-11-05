@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>jQuery图片轮播</title>
+<meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.seven.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<link href="css/sevenslider.css" rel="stylesheet" />
+<link href="css/skins/clean.css" rel="stylesheet" />
+</head>
+<body>
+<script type="text/javascript" language="javascript">
+	$(document).ready(function(){
+		var tb=$(".seven_container").sevenslider({
+			width:774,
+			height:436,
+			fullwidth:false,animation:0,automation:true,autointerval:3,progress:true,progresstype:"linear",bullet:true,carousel:false,circular:true,responsive:true,swipe:true,keyboard:true,skin:"clean",lightbox:true		});
+
+	});
+</script>        
+<br>
+<div class="seven_container">
+            <div id="seven_viewport">
+                <div class="seven_slider">
+                    <div class="seven_slide"><a class="seven_slide_title">Welcome</a><img src="img/001.jpg" /></div>
+                    <div class="seven_slide"><a class="seven_slide_title">Responsive</a><img src="img/002.jpg" /></div>
+                    <div class="seven_slide"><a class="seven_slide_title">Swipe Enabled</a><img src="img/003.jpg" /></div>
+                    <div class="seven_slide"><a class="seven_slide_title">Vast animation</a><img src="img/004.jpg" /></div>
+                    <div class="seven_slide"><a class="seven_slide_title">Lightbox support</a><img src="img/005.jpg" /></div>
+                    <div class="seven_slide"><a class="seven_slide_title">Video support</a><img src="img/006.jpg" /></div>
+                </div>
+            </div>
+            <a id="left_btn" class="seven_nav">Previous Slide</a>
+            <a id="right_btn" class="seven_nav right_btn">Next Slide</a>
+	</div>
+<div style="text-align:center;clear:both">
+<p>IE8/360/FireFox/Chrome/Safari/Opera/Ρ/.</p>
+<p>��Դ��<a href="http://sc.chinaz.com/" target="_blank">վ���ز�</a></p>
+</div>
+</body>
+</html>
