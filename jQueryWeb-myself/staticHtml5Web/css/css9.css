@@ -1,0 +1,21 @@
+@chatset "usf-8";
+/*CSS Document*/
+
+body
+{
+	font-size:12px
+}
+
+fieldset
+{
+	padding: 10px;
+	width: 285px;
+	float: left
+}
+
+output
+{
+	font-size: 14px;
+	font-family:Verdana, Geneva, sans-serif;
+	padding-left: 72px
+}

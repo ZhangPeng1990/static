@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <script src="../js/jquery-1.7.2.min.js" type="text/javascript"></script>
+  <!--jQuery选择过滤器-->
+  <script type="text/javascript">
+  	$(
+
+        function(){
+           $("#table tr:first").css("fontSize","20");
+           $("#table tr:last").css("color","red");
+           $("#table tr:gt(0):lt(3)").css("fontSize","28");
+           $("#table tr:gt(0):even").css("background","red");
+        });
+  </script>
+ </HEAD>
+
+ <BODY>
+ 	  <table id="table">
+      <tr>
+        <td>姓名</td><td>成绩</td>
+      </tr>
+      <tr>
+        <td>Tom</td><td>100</td>
+      </tr>
+      <tr>
+        <td>Jery</td><td>99</td>
+      </tr>
+      <tr>
+        <td>Sany</td><td>98</td>
+      </tr>
+      <tr>
+        <td>Jhon</td><td>80</td>
+      </tr>
+      <tr>
+        <td>Jhon</td><td>80</td>
+      </tr>
+      <tr>
+        <td>平均分</td><td>85</td>
+      </tr>
+    </table>
+  	
+ </BODY>
+</HTML>

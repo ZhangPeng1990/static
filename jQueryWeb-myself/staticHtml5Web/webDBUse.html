@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>webSQL创建测试</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+	<style type="text/css">
+		body {
+			font-size: 12px
+		}
+	</style>
+	<script type="text/javascript" src="js/webDB.js"></script>
+  </head>
+  
+  <body onLoad="Init_Data();">
+    <input id="btnAdd" onClick="btnCreateDb_Click();" type="button" value="创建数据库">
+    <input id="btnDel" onClick="btnTestConn_Click();" type="button" value="测试连接">
+    <input id="btnCreateTrans" onClick="btnCreateTrans_Click();" type="button" value="执行事务">
+    <p id="pState"></p>
+    <fieldset>
+      <legend>新增学生资料</legend>
+      <span>
+        学号：<input type="text" readonly="true" id="txtStuID" size="10"><br>
+        姓名：<input type="text" id="txtName" size="15">
+      </span>
+      <span>
+        性别：<select id="selSex">
+                <option value="男">男</option>
+                <option value="女">女</option>
+              </select>
+        总分：<input type="text" id="txtScore" size="8">
+      </span>
+      <p>
+        <input id="btnInsert" type="button" value="提交" onClick="btnInsert_Click();">
+      </p>
+    </fieldset>
+  </body>
+</html>

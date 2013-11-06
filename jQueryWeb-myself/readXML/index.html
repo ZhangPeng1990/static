@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>加载xml文件</title>
+
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+
+<script type="text/javascript">
+function load(){
+	$.ajax({  
+        url: 'xml/t1.xml',  
+        type: 'GET',  
+        dataType: 'html',  
+        timeout: 1000,  //设定超时  
+        cache: false,   //禁用缓存  
+        error: function(xml) {  
+            alert("加载XML文档出错!");  
+        },  
+        success: function(xml) {
+        	$("#show").html(xml);
+        }
+    });
+}
+</script>
+
+</head>
+<body>
+	<div>
+		<input type="button" onclick="load();" value="加载xml"/>
+	 	<div id="show">
+	 	</div>
+	</div>
+</body>
+</html>

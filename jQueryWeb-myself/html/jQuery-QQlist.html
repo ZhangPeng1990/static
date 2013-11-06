@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE>QQ好友列表效果 </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <script src="../js/jquery-1.7.2.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+  	$(function(){
+  		$("#qq li:odd").addClass("body");
+  		$("#qq li:even").addClass("header").click(function(){
+  			$(this).next("li.body").show().siblings("li.body").hide();
+  		});
+  	});
+  </script>
+  
+  <style type="text/css">
+  	ul{list-style-type: none;}
+  	.header{background-color: red;cursor: pointer;}
+  	.body{border-color: blue;border-style: solid;border-width: 1px;}
+  </style>
+ </HEAD>
+
+ <BODY>
+ 	<ul id="qq">
+ 		<li>我的好友</li>
+ 		<li>
+ 			复兴雷 <br />
+ 			贺小贱<br />
+ 			赵朝天<br />
+ 			万书磊<br />
+ 		</li>
+ 		<li>同学</li>
+ 		<li>
+ 			唱完那 <br />
+ 			死叫哥<br />
+ 			五部委<br />
+ 			万数码<br />
+ 			保健杨<br />
+ 		</li>
+ 		<li>陌生人</li>
+ 		<li>
+ 			冬天的雪 <br />
+ 			夏天的风<br />
+ 			小广告<br />
+ 		</li>
+ 	</ul>
+ </BODY>
+</HTML>

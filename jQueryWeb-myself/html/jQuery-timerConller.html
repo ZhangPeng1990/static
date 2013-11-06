@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <script src="../js/jquery-1.7.2.min.js" type="text/javascript"></script>
+  <!--jQuery计时器-->
+  <script type="text/javascript">
+  	var leftSecond = 10;
+    var intervalId;
+
+    $(function(){
+      $("#btn").attr("disabled",true);
+      intervalId = setInterval("CountDown()",1000);
+      $("#btn").click(function(){
+        $("textarea").val("已同意");
+      });
+    });
+
+    function CountDown(){
+      if(leftSecond <= 0){
+        $("#btn").val("同意");
+        $("#btn").attr("disabled",false);
+        clearInterval(intervalId);
+        return;
+      }
+      leftSecond--;
+      $("#btn").val("请仔细阅读" + leftSecond + "秒");
+    }
+  </script>
+ </HEAD>
+
+ <BODY>
+ 	 <textarea>确认函，吧啦吧啦吧啦</textarea>
+   <input id="btn" type="button" value="同意">
+ </BODY>
+</HTML>

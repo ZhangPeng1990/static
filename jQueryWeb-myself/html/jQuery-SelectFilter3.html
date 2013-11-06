@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <script src="../js/jquery-1.7.2.min.js" type="text/javascript"></script>
+  <!--jQuery选择过滤器,属性过滤器-->
+  <script type="text/javascript">
+  	$(function(){
+
+      $("input[name=city]").click(function(){
+          var arr = new Array();
+          $("input[name=city]:checked").each(function(key,value){
+            arr[key] = $(value).val();
+          });
+          
+          $("#selected").text("共选择了" + arr.length + "项：" + arr.join(","));
+
+          $("#showButton").click(function(){
+            $("#show").val(arr.join(","));
+          });
+
+      });
+
+    });
+  </script>
+ </HEAD>
+
+ <BODY>
+ 	 <input type="checkbox" value="北京" name="city">北京</input>
+   <input type="checkbox" value="天津" name="city">天津</input>
+   <input type="checkbox" name="city">上海</input>
+   <input type="checkbox" name="city">重庆</input>
+   <input type="checkbox" name="city">广州</input>
+   <input type="checkbox" name="city">杭州</input>
+   <input type="checkbox" name="city">苏州</input>
+   <input type="checkbox" name="city">扬州</input>
+   <input type="checkbox" name="city">德州</input>
+   <input id="showButton" type="button" value="显示选中结果" />
+   <p>
+    <span>已选择的城市：</span>
+    <input id="show" type="text" />
+    <p id="selected"></P>
+   </p>
+ </BODY>
+</HTML>

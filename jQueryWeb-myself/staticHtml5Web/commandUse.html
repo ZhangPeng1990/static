@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>command元素的使用</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+	<style type="text/css">
+		body {
+			padding: 5px;
+			font-size: 12px
+		}
+		menu {
+			padding-left:10px;
+			padding-bottom:10px;
+			display: block;
+			border: solid 1px #365167;
+			width: 40px;
+			height: 50px
+		}
+		command{
+			 float: left;
+			 margin: 5px;
+			 width: 30px;
+			 cursor: hand
+		}
+		#diglog{
+			display: none;
+			position: absolute;
+			left: 25%;
+			top: 9%;
+			font-size: 13px;
+			width: 320px;
+			height: 150px;
+			border: #666 solid 3px;
+		}
+		#dialog .title{
+			padding: 5px;
+			background-color: #eee;
+			height: 21px;
+			line-height: 21px
+		}
+		#dialog .title .fleft{
+			float: left
+		}
+		#dialog .title .fright{
+			float: right
+		}
+		#dialog .content{
+			padding: 50px
+		}
+	</style>
+  </head>
+  
+  <body>
+  		<menu>
+  			<command onclick="command_click('文件')">文件</command>
+  			<command onclick="command_click('打开')">打开</command>
+  		</menu>
+  		<div id="dialog">
+  			<div class="title">
+  				<div class="fleft">提示</div>
+  				<div class="fright">关闭</div>
+  			</div>
+  			<div class="content">
+  				<div id="divTip"></div>
+  			</div>
+  		</div>
+  		
+  		<script type="text/javascript">
+  			function command_click(strS){
+  				document.getElementById("dialog").style.display="block";
+  				var strContent = "正在操作<font color=red>" + strS + "</font>选项";
+  				document.getElementById("divTip").innerHTML=strContent;
+  			}
+  		</script>
+  </body>
+</html>

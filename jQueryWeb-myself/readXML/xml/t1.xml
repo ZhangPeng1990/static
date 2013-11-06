@@ -1,0 +1,8 @@
+<div id="pagelayout_left_side_edit" class="pagelayout_edit pageedit_2" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); width: 453px; height: 624px;" has_edited="true" num="2" name="T1" width="186" height="256" page_type="P" product_type="MPAD" space_type="B" margin_type="A" side_type="L" cross_type="O" background_color="#ffffff" color="#000000">
+	<div class="trim_line_top"></div>
+	<div class="trim_line_left"></div>
+	<div class="trim_line_bottom"></div>
+	<div class="trim_line_right"></div>
+	<div align="left" class="text_box text_box_background txt1" id="txt1" name="txt1" x="16" y="118" width="145" height="10" space="0" leading="0" max_line="1" max_length="17" pt="24" px="15" direction="horizontal" style="left: 39px; top: 288px; width: 353px; height: 24px; font-size: 15px;">在此输入文字~</div>
+	<div align="left" class="text_box text_box_background txt2" id="txt2" name="txt2" x="16" y="128" width="145" height="6" space="0" leading="0" max_line="1" max_length="34" pt="12" px="8" direction="horizontal" style="left: 39px; top: 312px; width: 353px; height: 15px; font-size: 9px;">在此输入文字~</div>
+</div>

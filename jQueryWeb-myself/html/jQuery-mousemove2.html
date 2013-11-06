@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> 图片随鼠标移动 </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <script src="../js/jquery-1.7.2.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+  	$(function(){
+  		$(document).mousemove(function(e){
+  			$("#fly").css("left",e.pageX).css("top",e.pageY);
+  		})
+  		.click(function(e){
+  			$("#fly").attr("style","position: static");
+  		});
+  	});
+  </script>
+ </HEAD>
+
+ <BODY>
+ 	<div id="fly" style="position: absolute;">
+ 		<img src="../images/qiaoba.jpg">
+ 	</div>
+ </BODY>
+</HTML>

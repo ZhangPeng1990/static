@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE>jQuery 操作 cookie,记住页面颜色</TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <script src="../js/jquery-1.7.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.cookie.js" type="text/javascript"></script>
+  
+  <script type="text/javascript">
+  	$(function(){
+  		if($.cookie("bgColor")){
+  			$("body").css("background-color",$.cookie("bgColor"));
+  		}
+  		
+  		var bgColor = "";
+  		$("table tr td").click(function(){
+  			bgColor = $(this).css("background-color");
+  			$("body").css("background-color",bgColor);
+  			$.cookie("bgColor",bgColor,{});
+  		});
+  	});
+  </script>
+  
+  <style type="text/css">
+  	body{
+  		cursor: pointer;
+  		}
+  </style>
+ </HEAD>
+
+ <BODY>
+ 	<table>
+ 		<tr>
+ 			<td style="background-color: red;">红色</td>
+ 			<td style="background-color: blue;">绿色</td>
+ 			<td style="background-color: gray;">灰色</td>
+ 		</tr>
+ 	</table>
+ </BODY>
+</HTML>

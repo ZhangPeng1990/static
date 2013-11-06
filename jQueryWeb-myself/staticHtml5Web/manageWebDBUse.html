@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>使用executeSql方法管理数据记录</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+	<style type="text/css">
+		body {
+			font-size: 12px
+		}
+	</style>
+	<script type="text/javascript" src="js/webDB.js"></script>
+  </head>
+  
+  <body onLoad="getWebSqlData(0);">
+    <p id="pState"></p>
+    <ul id="ulMessage">
+      正在读取数据...
+    </ul>
+    <fieldset>
+      <legend id="fstInput"></legend>
+      <span>
+        学号：<input type="text" readonly="true" id="txtStuID" size="10"><br>
+        姓名：<input type="text" id="txtName" size="15">
+      </span>
+      <span>
+        性别：<select id="selSex">
+                <option value="男">男</option>
+                <option value="女">女</option>
+              </select>
+        总分：<input type="text" id="txtScore" size="8">
+      </span>
+      <p>
+        <input id="btnInsert" type="button" value="提交" onClick="btnInsert_Click();">
+        <input id="btnInsert" type="button" value="更新" onClick="btnUpdate_Click();">
+      </p>
+    </fieldset>
+  </body>
+</html>

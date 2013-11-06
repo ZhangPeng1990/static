@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>webStorage客户端数据存贮使用</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+	<style type="text/css">
+		body {
+			padding: 5px;
+			font-size: 12px
+		}
+	</style>
+	<script type="text/javascript" src="js/sessionStorage.js"></script>
+  </head>
+  
+  <body>
+    <fieldset>
+      <legend>sessionStorage对象保存与读取临时数据</legend>
+      <input name="txt" type="text" onChange="txtName_change(this);" size="30px">
+      <input name="btnGetValue" type="button" onClick="btnGetValue_click();" value="读取">
+      <p id="pStade"></p>
+    </fieldset>
+  </body>
+</html>

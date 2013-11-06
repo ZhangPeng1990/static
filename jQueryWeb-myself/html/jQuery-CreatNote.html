@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <script src="../js/jquery-1.7.2.min.js" type="text/javascript"></script>
+  <!--jQuery创建节点，动态创建-->
+  <script type="text/javascript">
+  	$(function(){
+      var link = $("<a target='_blank' href='http://www.baidu.com'>百度</a>");
+      $("div:first").append(link);
+
+      var links = {"百度":"http://www.baidu.com","谷歌":"http://www.google.cn","淘宝":"http://www.taobao.com",
+                    "新浪":"http://www.sina.com","网易":"http://www.163.com"};
+      $.each(links,function(key,value){
+        var tr = $("<tr><td><a target='_blank' href='" + value +"''>" + key + "</a>" +　"</td></tr>");
+        $("#webTable").append(tr);
+      });
+
+    });
+  </script>
+ </HEAD>
+
+ <BODY>
+ 	 <div>
+   </div>
+   <table id="webTable">
+   </table>
+ </BODY>
+</HTML>

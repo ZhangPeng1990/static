@@ -1,0 +1,11 @@
+<div id="pagelayout_left_side_edit" class="pagelayout_edit pageedit_2" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); width: 453px; height: 624px;" has_edited="true" num="2" name="T2" width="186" height="256" page_type="P" product_type="MPAD" space_type="B" margin_type="A" side_type="L" cross_type="O" background_color="#ffffff" color="#000000">
+	<div class="trim_line_top"></div>
+	<div class="trim_line_left"></div>
+	<div class="trim_line_bottom"></div>
+	<div class="trim_line_right"></div>
+	<div class="image_box img1 ui-droppable" id="img1" name="img1" x="13" y="23" width="136" height="204" style="left: 32px; top: 56px; width: 332px; height: 497px;">
+		<div class="drag_here"></div>
+		<div class="dpi_info">1339x2008</div>
+	</div>
+	<div align="left" class="text_box text_box_background txt1" id="txt1" name="txt1" x="13" y="240" width="136" height="3" space="0" leading="0" max_line="1" max_length="48" pt="8" px="6" direction="horizontal" style="left: 32px; top: 585px; width: 332px; height: 12px; font-size: 9px;">�ڴ���������~</div>
+</div>

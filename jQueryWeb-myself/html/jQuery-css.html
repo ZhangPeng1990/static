@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML version="-//W3C//DTD HTML 4.01 Transitional//EN">
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <script src="../js/jquery-1.7.2.min.js" type="text/javascript"></script>
+
+  <script type="text/javascript">
+  	$(function(){
+  		
+  		$("div").attr("align","center");
+  		
+  		$("#btnAdd").click(function(){
+  			$("#div1").addClass("class2");
+  		});
+  		
+		$("#btnRomove").click(function(){
+			$("#div1").removeClass("class2");  			
+  		});
+  		
+		$("#btnToggle").click(function(){
+			$("#div1").toggleClass("class2");
+		});
+		
+		$("#openAndclose").click(function(){
+			$("body").toggleClass("night");
+		});
+		
+  	});
+  </script>
+  
+  <style type="text/css">
+  	input{font-size: 20px;};
+  	.class1{background-color:red;}
+  	.class2{font-size: 50px;}
+  	
+  	.night{background-color: black;}
+  	
+  </style>
+ </HEAD>
+
+ <body>
+ 	<div align="center">
+ 		<img src="../images/fbb.jpg">
+ 	</div>
+ 	<div id="div1" class="class1">你好</div>
+ 	<div>
+ 	<input type="button" value="add" id="btnAdd"/>
+ 	<input type="button" value="remove" id="btnRomove"/>
+ 	<input type="button" value="切换" id="btnToggle"/>
+  	<input type="button" value="开关灯" id="openAndclose"/>
+  	</div>
+ </body>
+</HTML>

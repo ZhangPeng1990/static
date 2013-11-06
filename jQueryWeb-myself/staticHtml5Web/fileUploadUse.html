@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>file文件上传元素使用</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+  <style type="text/css">
+    .li{
+      letter-spacing: 5px;
+    }
+  </style>
+	<style type="text/css">
+		body {
+			padding: 5px;
+			font-size: 12px
+		}
+	</style>
+	<script type="text/javascript" src="js/fileUpload.js"></script>
+  </head>
+  
+  <body>
+  		<form id="frmTmp">
+  			<fieldset>
+  				<legend>上传多个文件</legend>
+  				<input type="file" name="fielUpload" id="fielUpload" multiple="true" onChange="fileUpload_GetFileList(this.files)"></input>
+  				<ul id="ulUpLoad"></ul>
+  			</fieldset>
+  		</form>
+  </body>
+</html>
