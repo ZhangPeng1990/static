@@ -1,0 +1,976 @@
+/*
+    Document   : error
+    Created on : 17 mars 2011, 12:21:39
+    Author     : Axel BELUJON
+    Description:
+        A Stylesheet for the main layout
+*/
+
+/* INTERFACE */
+
+
+body{
+    width: 100%;
+    min-width: 1100px;
+    background: #EDEAE0;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    position: absolute;
+    min-height: 100%;
+    color: #331000;
+}
+
+a:focus{
+    border: none;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+header{
+    height: 448px;
+    width: 100%;
+    margin-top: -388px;
+}
+
+.clear{
+    clear: both;
+}
+
+.line{
+    height: 3px;
+    width: 100%;
+    background: url('../images/elts/line.jpg');
+}
+
+#container{
+    margin-bottom: 10px;
+    padding: 10px 0 20px 25px;
+    width: 98%;
+}
+
+ul{
+    margin-left: 0;
+}
+
+li{
+    list-style: none;
+}
+
+/* HEADER */
+
+#tagZone{
+    height: 388px;
+    width: 100%;
+    height: 377px;
+    position: absolute;
+    z-index: 2;
+    background: url('../images/elts/tags-paper.png') repeat-x;
+}
+
+#tagz{
+    padding: 25px 0 0 45px;
+    color: #47281a;
+    min-width: 1010px;
+    width: 1010px;
+}
+
+#tagexplanation{
+    color: #be5327;
+    font-size: 14px;
+}
+
+#tagtitle{
+    font-family: Birch, Arial;
+    font-size: 50px;
+    text-transform: uppercase;
+    height: 50px;
+    width: 200px;
+}
+
+#tag-list{
+    height: 180px;
+}
+
+#tag-list li{
+    float: left;
+    width: 119px;
+    height: 36px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 0 0 39px;
+    margin-bottom: -15px;
+    cursor: pointer;
+}
+
+#tag-list li.selected{
+    background: url('../images/elts/tags-bg.png') no-repeat;
+    color: #be5327;
+}
+
+#submittags{
+    background: url("../images/elts/okay-btn.png") no-repeat transparent;
+    width: 111px;
+    height: 63px;
+    border: none;
+}
+
+#submittags:hover{
+    background: url('../images/elts/okay-btn-hover.png') no-repeat transparent;
+}
+
+.tag-btns{
+    float: right;
+    width: 200px;
+    margin-top: 12px;
+}
+
+#cancel-btn{
+    color: #be5327;
+    text-decoration:  none;
+    font-weight: bold;
+    font-size: 14px;
+    position: relative;
+    top: 22px;
+}
+
+#searchtag{
+    width: 112px;
+    float: right;
+}
+
+#nav{
+    height: 83px;
+    width: 100%;
+    position: relative;
+    top: 360px;
+    z-index: 1;
+    background: #000 url('../images/elts/wood_new.jpg') repeat-x;
+}
+
+#nav #logo{
+    position: relative;
+    width: 250px;
+    top: -10px;
+    left: 20px;
+    float: left;
+}
+
+#nav #logo:hover{
+    opacity: .9;
+}
+
+#nav #menu{
+    float: left;
+    height: 80px;
+    width: 770px;
+    margin-left: 45px;
+}
+
+#nav #search{
+    width: 293px;
+    height: 34px;
+    background: url('../images/elts/field-search.png');
+    position: relative;
+    top: 35px;
+    float: left;
+}
+
+#nav #search input{
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    font-size: 14px;
+    color: #9e7a63;
+    background: none transparent;
+    border: none;
+    padding-left: 10px;
+    position: relative;
+    width: 230px;
+    height: 30px;
+    top: 1px;
+    left: 10px;
+}
+
+#btnsearch{
+    width: 30px !important;
+    height: 30px !important;
+    opacity: 0;
+}
+
+#nav #search input:focus{
+    border: none;
+    outline: none;
+}
+
+#menu nav{
+    float: left;
+    margin-left: 25px;
+    font-size: 14px;
+    position: relative;
+    top: 1px;
+}
+
+#menu nav a{
+    text-decoration: none;
+    color: #fff !important;
+    -moz-text-shadow: 0 1px 3px #000;
+    -webkit-text-shadow: 0 1px 3px #000;
+    text-shadow: 0 1px 3px #000;
+}
+
+#menu nav li{
+    float: left;
+    width: 91px;
+    height: 75px;
+    text-align: center;
+    margin-right: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#menu nav li.selected{
+    background: url('../images/elts/hover-menu.png') no-repeat;
+}
+
+#menu nav li.selected a{
+    color: #be5327 !important;
+}
+
+#menu nav li a{
+    position: relative;
+    top: 43px;
+}
+
+#nav #sharingtop{
+    width: 140px;
+    margin-top: 35px;
+    float: left;
+}
+
+#sharingtop a{
+    margin-left: 10px;
+}
+
+#sharingtop a:hover{
+    opacity: .7;
+}
+
+/* NOTIF */
+
+#notif{
+    width: 100%;
+    height: 44px;
+    margin-top: -44px;
+    position: fixed;
+    top: 0;
+    z-index: 6;
+    background: url('../images/elts/notif-bg.png') repeat-x;
+    text-align: center;
+}
+
+#notiftxt{
+    font-size: 15px;
+    font-weight: bold;
+    color: #be5327;
+    position: relative;
+    top: 8px;
+}
+
+#notifclose{
+    position: absolute;
+    top: 10px;
+    right: 6px;
+}
+
+/* PAGES */
+
+.pages{
+    width: 100%;
+    opacity: 0;
+}
+
+.ie7 .pages, .ie8 .pages{
+	display: none;	
+}
+
+#bodysearch #pages, #bodytags #pages{
+    position: relative;
+    margin-top: 15px;
+}
+
+.page{
+    width: 220px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#addyour404:hover{
+    opacity: .95;
+}
+
+.page a{
+    text-decoration: none;
+}
+
+.page .overlike{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 218px;
+    opacity: 0;
+    background: #331c12;
+    border: #be5327 1px solid;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    font-size: 20px;
+    color: #fff;
+}
+
+.page .overtxt{
+    position: absolute;
+    bottom: 0;
+    width: 200px;
+    overflow: hidden;
+    padding: 0 0 10px 10px;
+}
+
+.page .date{
+    font-size: 13px;
+}
+
+.page img.pageImg{
+    z-index: 3;
+    -webkit-box-shadow: 0px 0px 5px #000;
+    -moz-box-shadow: 0px 0px 5px #000;
+    box-shadow: 0px 0px 5px #000;
+}
+
+.add{
+    position: relative;
+    display: inline-block;
+    width: 220px;
+}
+
+.likestar{
+    width: 85px;
+    height: 81px;
+    background: url('../images/elts/etoile.png') no-repeat;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    margin-top: -42px;
+    font-family: Carneval, Arial;
+    color: #331000;
+    font-size: 35px;
+	display: block;
+}
+
+.likestar .txt{
+    font-size: 10px;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    font-weight: bold;
+    position: relative;
+    top: -32px;
+}
+
+.likestar .para{
+    position: relative;
+    top: 15px;
+    text-align: center;
+	display: block;
+}
+
+.likestar br{
+    margin: 0;
+    padding: 0;
+    height: 0;
+}
+
+.badges{
+    position: absolute;
+    top: -15px;
+    right: -20px;
+    width: 275px;
+}
+
+.badges img{
+    float: right;
+    position: relative;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+	max-width: 68px;
+}
+
+.badges img:hover{
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    transform:rotate(45deg);
+}
+
+.badge0{
+    z-index: 4;
+}
+
+.badge1{
+    right: -20px;
+    z-index: 3;
+}
+
+.badge2{
+    right: -40px;
+    z-index: 2;
+}
+
+.badge3{
+    right: -60px;
+    z-index: 1;
+}
+
+#pagination{
+    text-align: center;
+}
+
+
+/* PAGE 404 solo */
+h1{
+    font-family: Birch, Arial;
+    font-size: 63px;
+    text-transform: uppercase;
+    margin-bottom: -13px;
+    color: #331000;
+}
+
+#nextprev{
+    width: 135px;
+    float: right;
+    margin-top: -56px;
+}
+
+#nextpage{
+    float: right;
+}
+
+.pagebadge{
+    float: left;
+    width: 102px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.pagebadge img {
+	max-width: 102px;	
+}
+
+.pagebadge:hover{
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    transform:rotate(45deg);
+}
+
+#mypage h2{
+    font-family: Birch, Arial;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #331000;
+}
+
+#mypage{
+    width: 1010px;
+}
+
+#pagehead{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#pageinfos{
+    float: left;
+    width: 780px;
+    min-height: 300px;
+    font-size: 16px;
+}
+
+#pageinfos h2{
+    margin-top: 10px;
+}
+
+#pageinfos #pages{
+    margin-left: -10px;
+}
+
+#pageinfos .line{
+    width: 770px;
+}
+
+#pageinfos a{
+    color: #be5327;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#pageinfos img{
+    -webkit-box-shadow: 0px 0px 5px #000;
+    -moz-box-shadow: 0px 0px 5px #000;
+    box-shadow: 0px 0px 5px #000;
+}
+
+#pagesource{
+    margin: 20px 0 20px 0;
+}
+
+li.pagetag{
+    width: auto;
+    float: left;
+    margin-right: 10px;
+    padding: 13px 11px 13px 11px;
+    background: #dbd4bf;
+    color: #b3aa8c;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+li.pagetag:hover{
+    background: #47281a;
+    color: #be5327;
+}
+
+#pagesidebar{
+    float: right;
+    width: 225px;
+    min-height: 300px;
+}
+
+#pagesidebar .line{
+    background-position: -50px;
+    margin-bottom: 10px;
+}
+
+#pagesidebar h2{
+    margin-top: 10px;
+}
+
+#ctl{
+    width: 225px;
+    height: 168px;
+    background: url('../images/elts/ctl.jpg');
+    font-family: Carneval, Arial;
+    font-size: 70px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#ctl #nbLike{
+    position: relative;
+    top: 16px;
+    left: -3px;
+}
+
+#ctl #nbLike a{
+    text-decoration: none;
+    color: #331000 !important;
+}
+
+
+/* SUBMIT */
+
+#submitGlobal{
+    width: 1012px;
+    height: 400px;
+}
+
+#sliderContainer{
+    width: 777px;
+    height: 149px;
+    margin-top: 20px;
+    background: url('../images/elts/slider-bg.png') no-repeat;
+}
+
+#slider{
+    width: 625px;
+    top: 15px;
+    left: 50px;
+}
+
+#slider a{
+    outline: none !important;
+}
+
+#submit-left{
+    float: left;
+    margin-top: 30px;
+}
+
+#submit-right{
+    width: 231px;
+    height: 302px;
+    float: right;
+    margin-top: 25px;
+}
+
+#submitform input{
+    width: 735px;
+    background: #fff;
+    color: #9e7a63;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    font-size: 28px;
+    font-weight: bold;
+    outline: none;
+    border: 2px solid #d7d3c5;
+    padding: 20px 15px 20px 15px;
+    border-radius: 5px;
+}
+
+#searchterm{
+    color: #be5327;
+}
+
+ul.ui-menu{
+    border-width: 20px 0;
+    -moz-border-image: url(../images/elts/autocomplete-bg.png) 10 0 20 0 stretch;
+    -webkit-border-image: url(../images/elts/autocomplete-bg.png) 10 0 20 0 stretch;
+    //border-image: url(../images/elts/autocomplete-bg.png) 10 0 20 0 stretch;
+    width: 291px;
+    position: relative;
+    left: 297px !important;
+    margin-top: 20px !important;
+    z-index: 6 !important;
+
+}
+
+ul.ui-menu a{
+    color: #fff;
+    text-decoration: none;
+}
+
+li.ui-menu-item{
+    border-bottom: #664b3f 1px solid;
+    padding: 3px 0 3px 0 !important;
+}
+
+li.ui-menu-item:hover{
+    background: #be5327;
+    cursor: pointer;
+}
+
+li.ui-menu-item:first-child{
+    border-top: none;
+}
+
+/* BADGES */
+
+#badgesGlobal{
+    width: 1012px;
+	min-height: 700px;
+}
+
+#badges-all{
+    min-height: 550px;
+}
+
+#badges-left{
+    float: left;
+    margin-top: 25px;
+    width: 767px;
+}
+
+#badges-prez{
+    margin-bottom: 30px;
+}
+
+#badges-right{
+    width: 231px;
+    height: 302px;
+    float: right;
+    margin-top: 20px;
+}
+
+
+.badge-elt{
+    width: 365px;
+    height: 145px;
+    float: left;
+}
+
+.badgeleft{
+    float: left;
+}
+
+.badgeright{
+    float: right;
+}
+
+.badge-elt h2{
+    font-size: 17px;
+    font-weight: bold;
+    color: #c0592f;
+}
+
+.getit-btn{
+    float: right;
+    margin-top: 10px;
+}
+
+#getit-window{
+    width: 585px;
+    height: 282px;
+    background: url('../images/elts/get-it-bg.png') repeat;
+    border: #be5327 1px solid;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -141px;
+    margin-left: -292px;
+    display: none;
+    -webkit-box-shadow: 0px 0px 8px #000;
+    -moz-box-shadow: 0px 0px 8px #000;
+    box-shadow: 0px 0px 8px #000;
+    color: #edeae0;
+}
+
+#getit-int{
+    opacity: 0;
+}
+
+#getit-window h2{
+    text-transform: uppercase;
+    font-family: Birch;
+    font-size: 64px;
+    text-align: center;
+    float: left;
+    width: 325px;
+}
+
+.line-getit{
+    width: 105px;
+    height: 65px;
+    float: left;
+    background: url("../images/elts/line.png") no-repeat 0 30px;
+}
+
+#getit-title{
+    position: relative;
+    top: 20px;
+    margin-left: 20px;
+}
+
+#getit-txt{
+    margin-top: 20px;
+}
+
+.orangeTxt{
+    color: #be5327;
+}
+
+#getit-buttons{
+    margin-left: 105px;
+    margin-top: 33px;
+    text-align: center;
+}
+
+.getit-button{
+    height: 120px;
+    float: left;
+    margin-right: 30px;
+}
+
+#getit-txt p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#getit-buttons p{
+    font-size: 13px;
+}
+
+#getit-close{
+    position: absolute;
+    margin-left: 555px;
+    margin-top: -15px;
+}
+
+.badge-elt p{
+    font-size: 12px;
+    color: #47281a;
+}
+
+.badge-img{
+    width: 102px;
+    float: left;
+}
+
+.badge-img img{
+    width: 102px;
+}
+
+.badge-txt{
+    width: 255px;
+    float: right;
+    position: relative;
+    top: 3px;
+}
+
+#zone-global{
+    width: 99%;
+}
+
+#crossClose{
+    float: right;
+    position: relative;
+    top: -54px;
+}
+
+/* SALOON */
+
+#saloonGlobal{
+    width: 99%;
+    margin-left: 20px;
+}
+
+#bodysaloon #container{
+    padding-left: 0;
+}
+
+#saloonGlobal h2{
+    font-family: Birch, Arial;
+    font-size: 63px;
+    text-transform: uppercase;
+    margin-bottom: -13px;
+    color: #331000;
+}
+
+#saloonGlobal .pages{
+    margin-bottom: 30px;
+}
+
+#saloonGlobal .line{
+    margin-bottom: 15px;
+}
+
+/* FOOTER */
+
+footer{
+    width: 98%;
+    font-family: Helvetica, Arial;
+    font-size: 12px;
+    color: #99958b;
+    margin-bottom: 75px;
+    padding-left: 2%;
+    height: 30px;
+}
+
+footer a, footer a:active, footer a:visited{
+    text-decoration: none;
+    color: #99958b;
+}
+
+footer a:hover{
+    text-decoration: none;
+    color: #69665f;
+}
+
+#foot-left{
+    width: 450px;
+    float: left;
+    font-weight: bold;
+    margin-left: 6px;
+}
+
+#foot-left li{
+    float: left;
+    padding: 0 5px;
+    border-left: 1px solid #99958b;
+	border-right: 1px solid #d7d3c9;
+}
+
+#foot-left li:first-child{
+    border-left: none;
+}
+
+#foot-left li:last-child{
+	border-right: none;	
+}
+
+#foot-left li a{
+    font-size: 12px;
+}
+
+#foot-right{
+    width: 450px;
+    float: right;
+    text-align: right;
+    margin-right: 40px;
+}
+
+#pagination-bottom{
+    display: block;
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+}
+
+#pagination-elt{
+	width: 380px;
+	height: auto;
+	position: absolute;
+	left: 50%;
+	margin-left: -190px;
+	padding-top: 15px;
+	text-align: center;
+}
+
+#pagination-elt .first{
+	float: right;	
+}
+
+#pagination-elt .last{
+	float: left;
+}
+
+#bodyhp #pagination-bottom{
+    height: 75px;
+    width: 100%;
+    background: #412418;
+    border-top: 1px solid #695b2c;
+}
+
+#loadmore{
+    position:  absolute;
+    display: none;
+    left: 50%;
+    margin-left: -17px;
+    margin-top: -30px;
+}
+
+#addyour404{
+	margin-left: 4px;	
+}
+
+
+
+/* AD PACK */
+.adpack-zone{ background: #f6f4ef; height: 210px; padding: 0 0 15px 0; margin-left: 10px; border: 1px solid #e6d1c2; width: 218px; margin-top: -7px; }
+#bsap_aplink{ margin-top: 15px; font-family: Arial; text-transform: uppercase; font-size: 11px !important; font-weight: bold; padding: 0 0 10px 0; }
+#bsap_aplink{ text-decoration: none; color: #948264; }
+#bsap_aplink:hover{ color: #331c12; }
+body .adpacks{background:#f6f4ef;padding:15px;margin:15px 0 0;border:3px solid #eee;}
+body .one .bsa_it_ad{background:transparent;border:none;font-family:inherit;padding:0 15px 0 10px;margin:0;text-align:center;}
+body .one .bsa_it_ad .bsa_it_i{display:block;padding:0;float:none;margin:0 0 5px;}
+body .one .bsa_it_ad .bsa_it_i img{padding:0;border:none;}
+body .one .bsa_it_ad .bsa_it_t{padding:6px 0 0 0;}
+body .one .bsa_it_p{display:none;}
+body .bsa_it_t{ color: #be5327 !important; font-size: 13px; font-family: Arial; }
+body .bsa_it_t:hover{ color: #953913 !important; }
+body .bsa_it_d{ color: #331c12 !important; font-style: normal;}
+body #bsap_aplink,body #bsap_aplink:hover{display:block;font-size:10px;text-align:center;}
