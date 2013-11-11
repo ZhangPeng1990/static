@@ -4,6 +4,6 @@ var html = '<table border="1" style="border-color: black;">\
 				</tr>\
 			</table>';
 
-jQuery.foo = function() {   
+jQuery.foo = function() {   //或者 jQuery.foo = $.foo function()
 	$("body").html(html);
 };  
