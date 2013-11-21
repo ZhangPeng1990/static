@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>jQuery水晶样式下拉导航 - 站长素材</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/blue/responsive.css">
+<link rel="stylesheet" type="text/css" href="css/blue/color.css">
+<link rel="stylesheet" type="text/css" href="font/titillium/stylesheet.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<script type="text/javascript" src="js/modernizr.custom.29473.js"></script>
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/dropdown.js"></script>
+
+<!--[if IE 7]>
+	<link rel="stylesheet" href="css/font-awesome-ie7.min.css">
+<![endif]-->
+
+<!--[if lte IE 9]>
+	<link rel="stylesheet" type="text/css" href="css/blue/desktop-ie.css">
+<![endif]-->
+
+</head>
+<body>
+
+<ul class="nav">
+  
+  <!-- Start Home -->
+  <li id="first"><a href="#" class="label">Home<i class="icon-chevron-down"></i></a>
+    <ul class="one" id="home">
+      <li>
+        <h3><i class="icon-user"></i>Welcome</h3>
+        <p>In the past, HTML alone provided basic formatting options for text, images, tables, and other web page elements. But today, professional web designers use CSS to style their pages. In fact, the older HTML tags used to format text and other page elements have been phased out by the World Wide Web Consortium (W3C), the organization that defines Web standards, in favor of CSS.</p>
+      </li>
+    </ul>
+  </li>
+  <!-- End Home --> 
+  
+  <!-- Start About -->
+  <li><a href="#" class="label">About Us<i class="icon-chevron-down"></i></a>
+    <ul class="one" id="about">
+      <li><img src="images/about.png" width="160" height="160" alt="image">
+        <h3><i class="icon-user"></i>About Us</h3>
+        <p>In the past, HTML alone provided basic formatting options for text, images, tables, and other web page elements. But today, professional web designers use CSS to style their pages. In fact, the older HTML tags used to format text and other page elements have been phased out by the World Wide Web Consortium (W3C), the organization that defines Web standards, in favor of CSS.</p>
+        <h6 class="light-color"><i class="icon-quote-left"></i>Is there a way to apply styles to an element only if it’s embedded within a particular element, rather than universally? In other words, can you ask for example that italics within headlines be boldface<i class="icon-quote-right"></i></h6>
+      </li>
+    </ul>
+  </li>
+  <!-- End About --> 
+  
+  <!-- Start Links -->
+  <li> <a href="#" class="label">Links<i class="icon-chevron-down"></i></a>
+    <ul class="one" id="links">
+      <li>
+        <div id="link-1" class="link-block">
+          <h5><i class="icon-laptop"></i>Links 1</h5>
+          <ul>
+            <li><a href="#"><i class="icon-angle-right"></i> Buttons</a></li>
+            <li><a href="#"><i class="icon-angle-right"></i> tabs</a></li>
+            <li><a href="#"><i class="icon-angle-right"></i> Menu</a></li>
+            <li><a href="#"><i class="icon-angle-right"></i> Css</a></li>
+            <li><a href="#"><i class="icon-angle-right"></i> Html5</a></li>
+            <li><a href="#"><i class="icon-angle-right"></i> java Script</a></li>
+            <li><a href="#"><i class="icon-angle-right"></i> Php</a></li>
+            <li><a href="#"><i class="icon-angle-right"></i> JQuery</a></li>
+            <li><a href="#"><i class="icon-angle-right"></i> Css 3</a></li>
+            <li><a href="#"><i class="icon-angle-right"></i> Asp.Net</a></li>
+          </ul>
+        </div>
+        <div id="link-2" class="link-block">
+          <h5><i class="icon-camera-retro"></i>Links 2</h5>
+          <ul>
+            <li><a href="#"><i class="icon-angle-right"></i> Forms</a></li>
+            <li><a href="#"><i class="icon-angle-right"></i> Sliders</a></li>
+            <li><a href="#"><i class="icon-angle-right"></i> Navigation</a></li>
+            <li><a href="#"><i class="icon-angle-right"></i> Photoshop</a></li>
+            <li><a href="#"><i class="icon-angle-right"></i> Dreamweaver</a></li>
+            <li><a href="#"><i class="icon-angle-right"></i> Fireworks</a></li>
+            <li><a href="#"><i class="icon-angle-right"></i> Expression Web</a></li>
+            <li><a href="#"><i class="icon-angle-right"></i> Corel</a></li>
+            <li><a href="#"><i class="icon-angle-right"></i> Visual Studio</a></li>
+            <li><a href="#"><i class="icon-angle-right"></i> Adobe</a></li>
+          </ul>
+        </div>
+        <div id="link-3" class="link-block">
+          <h5><i class="icon-desktop"></i>Links 3</h5>
+          <ul>
+            <li><a href="#"><i class="icon-angle-right"></i> Corel</a></li>
+            <li><a href="#"><i class="icon-angle-right"></i> Visual Studio</a></li>
+            <li><a href="#"><i class="icon-angle-right"></i> Adobe</a></li>
+            <li><a href="#"><i class="icon-angle-right"></i> Forms</a></li>
+            <li><a href="#"><i class="icon-angle-right"></i> Sliders</a></li>
+            <li><a href="#"><i class="icon-angle-right"></i> Navigation</a></li>
+            <li><a href="#"><i class="icon-angle-right"></i> Layouts</a></li>
+            <li><a href="#"><i class="icon-angle-right"></i> Buttons</a></li>
+            <li><a href="#"><i class="icon-angle-right"></i> tabs</a></li>
+            <li><a href="#"><i class="icon-angle-right"></i> Menu</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <!-- End Links --> 
+  
+  <!-- Start DropDown --> 
+  <!-- Start Level 1 -->
+  <li> <a href="#" class="label">DropDown<i class="icon-chevron-down"></i></a>
+    <ul class="one" id="menu">
+      <li><a href="#">Photoshop</a></li>
+      
+      <!-- Start Level 2 -->
+      <li> <a href="#">Dreamweaver<i class="icon-chevron-right"></i><i class="icon-chevron-down"></i></a>
+        <ul class="one" id="sub-menu">
+          <li><a href="#">Page 1</a></li>
+          
+          <!-- Start Level 3 -->
+          <li> <a href="#">Page 2<i class="icon-chevron-right"></i><i class="icon-chevron-down"></i></a>
+            <ul class="one" id="sub-menu">
+              <li><a href="#">Page 1</a></li>
+              <li><a href="#">Page 2</a></li>
+              <li><a href="#">Page 3</a></li>
+              <li><a href="#">Page 4</a></li>
+            </ul>
+          </li>
+          <!-- End Level 3 -->
+          
+          <li><a href="#">Page 3</a></li>
+          <li><a href="#">Page 4</a></li>
+          <li><a href="#">Page 5</a></li>
+        </ul>
+      </li>
+      <!-- End Level 2 -->
+      
+      <li><a href="#">Fireworks</a></li>
+      <li><a href="#">Adobe</a></li>
+      <li><a href="#">Visual Studio</a></li>
+    </ul>
+  </li>
+  <!-- End Level 1 --> 
+  <!-- End DropDown --> 
+  
+  <!-- Start Gallery -->
+  <li> <a href="#" class="label">Gallery<i class="icon-chevron-down"></i></a>
+    <ul class="one" id="gallery">
+      <li>
+        <div class="image"><img src="images/thumb3.png">
+          <p>To create web pages made up of HTML and CSS, you need nothing more than a basic text editor like Notepad (Windows) or Text Edit (Mac). But after typing a few hundred lines of HTML and CSS...</p>
+          <a class="more">more...</a> </div>
+        <div class="image"><img src="images/thumb3.png">
+          <p>To create web pages made up of HTML and CSS, you need nothing more than a basic text editor like Notepad (Windows) or Text Edit (Mac). But after typing a few hundred lines of HTML and CSS...</p>
+          <a class="more">more...</a></div>
+        <div class="image"><img src="images/thumb3.png">
+          <p>To create web pages made up of HTML and CSS, you need nothing more than a basic text editor like Notepad (Windows) or Text Edit (Mac). But after typing a few hundred lines of HTML and CSS...</p>
+          <a class="more">more...</a></div>
+      </li>
+    </ul>
+  </li>
+  <!-- End Gallery --> 
+  
+  <!-- Start Contact -->
+  <li class="right"> <a href="#" class="label">Contact<i class="icon-chevron-down"></i></a>
+    <ul class="one" id="contact">
+      <li>
+        <p>Name<em>*</em></p>
+        <input name="name" type="text" id="name" class="light-color">
+        <p>E-mail<em>*</em></p>
+        <input name="email" type="text" id="email" class="light-color">
+        <p>Message<em>*</em></p>
+        <textarea name="comment" cols="" rows="" id="comment" class="light-color"></textarea>
+        <input name="send" type="button" id="send" value="Send">
+        <h4 id="h4-social"></h4>
+        <a href="#"><i class="icon-facebook"></i></a> <a href="#"><i class="icon-twitter"></i></a> <a href="#"><i class="icon-google-plus"></i></a> <a href="#"><i class="icon-linkedin"></i></a><a href="#"><i class="icon-pinterest"></i></a> </li>
+    </ul>
+  </li>
+  <!-- End Contact -->
+  
+</ul>
+<div style="text-align:center;clear:both"><br><br><br><br>
+<p>适用浏览器：360、FireFox、Chrome、Safari、Opera、傲游、搜狗. 不支持IE8、世界之窗。</p><br>
+<p>来源：<a href="http://sc.chinaz.com/" target="_blank">站长素材</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+jQuery动画按钮图标菜单导航插件imgbubbles，imgbubbles是一款基于jQuery的动画按钮菜单插件，鼠标滑过按钮时，按钮会有逐渐放大的特效，放大的速度可以自定义。

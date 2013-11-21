@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="zh-CN">
+<title>易迅多格jquery焦点图 - 站长素材</title>
+<link href="css/zzsc.css" rel="stylesheet" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.js"></script>
+</head>
+<body>
+<script type="text/javascript">document.oncontextmenu=function(){ return false }</script>
+
+<div class="zzsc" style="margin:30px auto">
+  <div class="tempWrap" style="overflow:hidden; position:relative; height:327px">
+    <ul class="main_content" style="position: relative; padding: 0px; margin: 0px; top: -654px;">
+      <li style="height: 327px;"><a href="http://sc.chinaz.com/" target="_blank"><img src="images/1.jpg"></a></li>
+      <li class="s" style="height: 327px;"><a href="http://sc.chinaz.com/" class="item_477_327"><img src="images/2.1.jpg" style="top: 0px;"></a><a href="http://sc.chinaz.com/" class="item_163_327"><img src="images/2.2.jpg" style="top: 0px;"></a><a href="http://sc.chinaz.com/" class="item_163_327"><img src="images/2.3.jpg" style="top: 0px;"></a></li>
+      <li class="s" style="height: 327px;"><a href="http://sc.chinaz.com/" class="item_477_327"><img src="images/3.1.jpg" style="top: 0px;"></a><a href="http://sc.chinaz.com/" class="item_327_163"><img src="images/3.2.jpg" style="top: 0px;"></a><a href="http://sc.chinaz.com/" class="item_163_163"><img src="images/3.3.jpg"></a><a href="http://sc.chinaz.com/" class="item_163_163"><img src="images/3.4.jpg"></a></li>
+      <li style="height: 327px;"><a href="http://sc.chinaz.com/" target="_blank"><img src="images/4.jpg"></a></li>
+      <li style="height: 327px;"><a href="http://sc.chinaz.com/" target="_blank"><img src="images/5.jpg"></a></li>
+      <li style="height: 327px;"><a href="http://sc.chinaz.com/" target="_blank"><img src="images/6.jpg"></a></li>
+    </ul>
+  </div>
+  <div class="bor_slide">
+    <ul class="ctrl">
+      <li class="item0">1</li>
+      <li class="item1">2</li>
+      <li class="item2">3</li>
+      <li class="item3 on">4</li>
+      <li class="item4">5</li>
+      <li class="item5">6</li>
+    </ul>
+  </div>
+</div>
+<script type="text/javascript">
+jQuery(".zzsc .s img").hover(function(){ $(this).animate({"top":-40},200) },function(){ $(this).animate({"top":0},200) } );
+jQuery(".zzsc").slide({ titCell:".bor_slide li", mainCell:".main_content", effect:"top", autoPlay:true});
+</script>
+<div style="text-align:center;clear:both">
+<p>适用浏览器：IE8、360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗.</p>
+<p>来源：<a href="http://sc.chinaz.com/" target="_blank">站长素材</a></p>
+</div>
+</body>
+</html>
