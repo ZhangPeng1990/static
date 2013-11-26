@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>jq特效,css群:189035492,jquery视频教程,js touch触屏特效</title>
+    <link href="style/163css.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.catenav li').each(function(){
+				$(this).hover(function(){
+					if($(this).children('.subnav').html()!=undefined){
+						$(this).addClass('maselect');$(this).find('.subnav').show();
+					}},function(){$(this).removeClass('maselect');$(this).find('.subnav').hide()}
+				)
+			})
+		})
+	</script>
+<body>
+	<div class="side fl">
+		<div class="box01-s-pro l">
+			<div class="title-s"><img src="images/img01.gif" /></div>
+			<div class="proall l">
+				<ul class="catenav">
+					<li><a class="ma ma-a" href="#"><em></em><strong>照片书</strong></a>
+						<div class="subnav">
+							<a href="#">拾光台历</a> | <a href="#">插卡台历</a> | <a href="#">小巧台历</a> | <a href="#">8寸横款</a>						
+						</div>
+					</li>
+					<li><a class="ma ma-b" href="#"><em></em><strong>2014日历</strong></a>
+						<div class="subnav">
+							<h5>新品推荐：亲子照片书</h5>
+							<p><a href="#">8寸方款软壳</a> | <a href="#">8寸方款</a> | <a href="#">8寸方款</a> | <a href="#">8寸方款</a></p>
+							<h5>新品推荐：旅行照片书</h5>
+							<p><a href="#">旅行照片书</a> | <a href="#">旅行照片书</a> | <a href="#">旅行照片书</a><a href="#">旅行照片书</a> | <a href="#">旅行照片书</a> | <a href="#">旅行照片书</a><a href="#">旅行照片书</a> | <a href="#">旅行照片书</a> | <a href="#">旅行照片书</a></p>
+						</div>
+					</li>
+					<li><a class="ma ma-a" href="#"><em></em><strong>照片书</strong></a>
+						<div class="subnav">
+							<h5>新品推荐：亲子照片书</h5>
+							<p><a href="#">拾光台历</a> | <a href="#">插卡台历</a> | <a href="#">小巧台历</a> | <a href="#">8寸横款</a>		</p>					
+						</div>
+					</li>
+					<li><a class="ma ma-b" href="#"><em></em><strong>2014日历</strong></a>
+						<div class="subnav">
+							<h5>新品推荐：亲子照片书</h5>
+							<p><a href="#">8寸方款软壳</a> | <a href="#">8寸方款</a> | <a href="#">8寸方款</a><a href="#">8寸方款</a></p>
+							<h5>新品推荐：旅行照片书</h5>
+							<p><a href="#">旅行照片书</a> | <a href="#">旅行照片书</a> | <a href="#">旅行照片书</a><a href="#">旅行照片书</a> | <a href="#">旅行照片书</a> | <a href="#">旅行照片书</a><a href="#">旅行照片书</a> | <a href="#">旅行照片书</a> | <a href="#">旅行照片书</a></p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

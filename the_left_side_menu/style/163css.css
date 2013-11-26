@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+/* CSS Document */
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,form,images,dl,dt,dd,table,th,td,blockquote,fieldset,div,strong,label,em{margin:0;padding:0;border:0;}
+ul,ol,li{list-style:none;}
+input,button{margin:0;font-size:12px;vertical-align:middle;}
+body{font-size:12px;font-family:Arial, Helvetica, sans-serif; text-align:center; margin:0 auto; font-family:"宋体";}
+table{border-collapse:collapse;border-spacing:0;}
+strong{font-weight:normal;}
+em{ font-style:normal; font-weight:normal;}
+h1,h2,h3{ font-size:14px;}
+h4{font-weight:normal; font-size:14px;}
+h5{ font-size:12px;}
+h6{ font-size:12px;font-weight:normal;}
+images{display:block;}
+.pcenter{ text-align:center; overflow:hidden;}
+.pcenter images{ margin:0 auto;}
+a{ text-decoration:none; color:#636162;}
+a:hover{color:#ee0017; }
+.fl{ float:left; display:inline;}
+.l{ width:100%; float:left;}
+.fr{ float:right; display:inline;}
+.pr{ position:relative;}
+.pa{ position:absolute;}
+.tl{ text-align:left;}
+.tc{ text-align:center}
+.tr{ text-align:right;}
+.f14{ font-size:14px;}
+.btn{ display:block; float:left; cursor:pointer; border:none;}
+.red{ color:#ea1849}
+
+.box01-s-pro{width:194px; text-align:left;}
+.title-s{ width:100%; }
+
+.catenav li{ width:100%; float:left; height:32px; position:relative;}
+.catenav li .ma{ padding-left:26px; color:#7c7c7c; display:block; background:url(../images/bg01.gif) no-repeat; height:32px; line-height:32px;}
+.catenav li em{ display:block; width:13px; height:13px; float:left; display:inline; margin:9px 5px 0 0;}
+.catenav li strong{ float:left;}
+.catenav li .ma-a em{ background:url(../images/icon01.gif) no-repeat;}
+.catenav li .ma-b em{ background:url(../images/icon02.gif) no-repeat;}
+.catenav li .ma:hover{background:url(../images/bg02.gif) no-repeat; }
+.catenav li.maselect .ma:hover,.catenav li.maselect .ma{background:url(../images/bg02.gif) no-repeat; width:169px; left:0; position:absolute; z-index:10; color:#f00;}
+.catenav li.maselect .ma-a em{ background:url(../images/icon01-h.gif) no-repeat;}
+.catenav li.maselect .ma-b em{ background:url(../images/icon02-h.gif) no-repeat;}
+
+.subnav{ position:absolute; line-height:22px; display:none; left:194px; top:0px; width:392px; background:#fff; border:1px solid #dd333c; padding:10px 5px; text-align:left;}
+.subnav h5{ padding-left:10px;}
+.subnav p{ border-bottom:1px solid #f2f2f2; padding-bottom:6px; margin-bottom:6px;}
+.subnav a{ padding-left:10px; margin-right:10px; display:inline-block;}
+
