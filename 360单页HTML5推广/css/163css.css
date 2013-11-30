@@ -1,0 +1,35 @@
+/* CSS Document */
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,form,img,dl,dt,dd,table,th,td,blockquote,fieldset,div,strong,label,em{margin:0;padding:0;border:0;}
+ul,ol,li{list-style:none;}
+input,button{margin:0;font-size:12px;vertical-align:middle;}
+body{font-size:12px;font-family:Arial, Helvetica, sans-serif;  text-align:center; margin:0 auto;}
+table{border-collapse:collapse;border-spacing:0;}
+.first{background: #00a200;}
+.center{background: url(../images/img01.png) center center no-repeat;}
+.more{background: #4abaec;}
+.center2{position: relative;background: url(../images/img03.png) center center no-repeat;}
+.middle{position: relative;height:1800px;background: #e8ebed;}
+.automiddle{margin:0 auto;position: relative;}
+.m4{position: relative;background: url(../images/img04.png) no-repeat;width:500px;height:355px;top:-68px;left:241px;margin:0 auto;
+opacity: 0;}
+.m3{position: relative;background: url(../images/img05.png) no-repeat;width:491px;height:357px;top:-44px;left:-232px;margin:0 auto;opacity: 0;}
+.m2{position: relative;background: url(../images/img06.png) no-repeat;width:502px;height: 382px;margin:0 auto;top: -11px;
+left: 236px;opacity: 0;}
+.m1{position: relative;background: url(../images/img07.png) no-repeat;width:544px;height:353px;top:75px;left:-238px;margin:0 auto;
+opacity: 0;}
+.m5{position: relative;background: url(../images/img08.png) no-repeat;width:625px;height:263px;margin:0 auto;left:-15px;top:-283px;opacity: 0;}
+.line{position: absolute;border-left:3px dotted #cfd6da;height:0;width:0;left:0;top:0;display: none;}
+.hover{width:233px;height:66px;display: block;position: relative;margin:0 auto;left:7px;}
+.hover:hover{background: url(../images/img02.png);}
+.bottom{cursor: pointer;width:75px;height:75px;background: url(../images/img02.png) 75px 0;position: absolute;bottom: -37px;left:50%;
+margin-left:-36px;z-index: 1;}
+.star{background: url(../images/img02.png) -617px 46px;width:22px;height:22px;margin:16px 0 0 25px;}
+@-webkit-keyframes bounceInDown{
+0%{opacity:0;-webkit-transform:translateY(-100px)}
+60%{opacity:0.4;-webkit-transform:translateY(30px)}
+80%{-webkit-transform:translateY(-10px)}
+100%{-webkit-transform:translateY(0)}}
+.bounceInDown{-webkit-animation-name:bounceInDown;-moz-animation-name:bounceInDown;-o-animation-name:bounceInDown;animation-name:bounceInDown}
+.tip{width:24px;height:85px;position: fixed;right:60px;top:48%;background: url(../images/img09.png) -6px 0px;}
+.tip a{display: block;width:20px;height:22px;margin-bottom: 15px;}
+.m5-cover{background: #e8ebed;height:290px;width:5px;position: relative;margin:0 auto;left:2px;}
