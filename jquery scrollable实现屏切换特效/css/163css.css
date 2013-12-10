@@ -1,0 +1,22 @@
+ /* CSS Document */
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,form,img,dl,dt,dd,table,th,td,blockquote,fieldset,div,strong,label,em{margin:0;padding:0;border:0;}
+ul,ol,li{list-style:none;}
+input,button{margin:0;font-size:12px;vertical-align:middle;}
+body{font-size:12px;font-family:Arial, Helvetica, sans-serif;  text-align:center; margin:0 auto;}
+table{border-collapse:collapse;border-spacing:0;}
+
+a{color:#333;text-decoration:none;}
+a:hover{color:#ef9b11; text-decoration:underline;}
+html{OVERFLOW-X: hidden}
+#banner{width: 100%; position: relative;height: 620px}
+#fla{z-index: 1; left: 50%; margin-left:-840px; width:1680px; padding-top:16px; position: absolute; top: 0px; height: 560px}
+#menu{z-index: 2000; background: url(../images/menu_bg.png) repeat-x; left: 0px; width: 100%; position: absolute; top: 0px; height: 52px}
+.scroll {overflow: hidden; position: relative}
+.scroll ul {width: 20000em; position: absolute}
+.scroll ul li {float: left;}
+.banner {width: 1680px; position: relative; height: 530px}
+.b1{width: 1680px; position: relative; height: 530px}
+a.arr_l{display: block; z-index: 1; background: url(../images/prevbtn.png) no-repeat; width: 35px; cursor: pointer; position: absolute; top: 206px; height: 35px}
+a.arr_r{display: block; z-index: 1; background: url(../images/prevbtn.png) no-repeat; width: 35px; cursor: pointer; position: absolute; top: 206px; height: 35px}
+a.arr_l{left: 25%}
+a.arr_r{right: 25%; background: url(../images/nextbtn.png) no-repeat}
